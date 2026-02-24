@@ -1,16 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import { AppProvider } from './providers/AppProvider';
-import App from './App';
-import './styles/global.css';
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './styles/globals.css'
+import App from './App.tsx'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <AppProvider>
-        <App />
-      </AppProvider>
-    </BrowserRouter>
-  </React.StrictMode>
-);
+// Mount CareConnect application
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)

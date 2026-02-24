@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280, initial-scale=1.0" />
+    <meta name="description" content="CareConnect - Desktop Healthcare Application" />
+    <title>CareConnect</title>
+    <style>
+      /* Prevent text selection for desktop app feel */
+      * {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* Allow text selection in inputs and text areas */
+      input, textarea, [contenteditable="true"] {
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+      }
+      
+      /* Desktop app base styles */
+      html, body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+      }
+      
+      #root {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+      }
+      
+      /* Custom cursor for app */
+      * {
+        cursor: default;
+      }
+      
+      button, a, [role="button"] {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/main.tsx"></script>
+  </body>
+</html>
