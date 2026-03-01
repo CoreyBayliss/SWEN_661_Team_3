@@ -1,8 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@custom-variant dark (&:is(.dark *));
+@import "tailwindcss";
 
 :root {
   --font-size: 16px;
@@ -184,11 +180,6 @@
   }
 }
 
-html {
-  font-size: var(--font-size);
-  overflow: hidden;
-}
-
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -220,6 +211,8 @@ body {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  font-size: var(--font-size);
+  overflow: hidden;
 }
 
 /* Focus styles for keyboard navigation - desktop style */
