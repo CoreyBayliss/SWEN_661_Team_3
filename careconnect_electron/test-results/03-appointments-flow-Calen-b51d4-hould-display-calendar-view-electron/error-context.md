@@ -1,0 +1,2021 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e15]:
+    - navigation "Main toolbar" [ref=e16]:
+      - generic [ref=e18]:
+        - generic "Select an element in the page to inspect it" [ref=e19]:
+          - button "Select an element in the page to inspect it - Ctrl + Shift + C" [ref=e20]
+        - generic "Toggle device toolbar" [ref=e22]:
+          - button "Toggle device toolbar - Ctrl + Shift + M" [ref=e23]
+      - generic:
+        - tablist "Panels":
+          - tab "Elements" [selected] [ref=e26]:
+            - generic [ref=e27]: Elements
+          - tab "Console" [ref=e28]:
+            - generic [ref=e29]: Console
+          - tab "Sources" [ref=e30]:
+            - generic [ref=e31]: Sources
+          - tab "Network" [ref=e32]:
+            - generic [ref=e33]: Network
+          - tab "Performance" [ref=e34]:
+            - generic [ref=e35]: Performance
+        - button "More tabs" [ref=e36]
+      - generic [ref=e40]:
+        - generic "Settings" [ref=e42]:
+          - button "Settings - F1 - Shift + ?" [ref=e43]
+        - button "Customize and control DevTools" [ref=e45]:
+          - button "Customize and control DevTools" [ref=e46]
+        - generic "Close" [ref=e48]:
+          - button "Close" [ref=e49]
+    - tabpanel "Elements panel" [ref=e52]:
+      - generic "elements" [ref=e53]:
+        - generic [ref=e55]:
+          - generic [ref=e58]:
+            - generic:
+              - main "DOM tree explorer" [ref=e60]:
+                - tree "Page DOM" [ref=e63]:
+                  - treeitem "<!DOCTYPE html>" [ref=e64]:
+                    - generic [ref=e68]: <!DOCTYPE html>
+                  - treeitem "<html lang=\"en\">" [expanded] [ref=e69]:
+                    - generic "<html lang=\"en\">" [ref=e73]:
+                      - text: <html
+                      - generic [ref=e74]: lang="en"
+                      - text: ">"
+                  - group [ref=e75]:
+                    - treeitem "<head> Expand …</head>" [ref=e76]:
+                      - generic [ref=e79]:
+                        - generic "<head>" [ref=e80]
+                        - button "Expand" [ref=e82]
+                        - text: …
+                        - generic "</head>" [ref=e84]
+                    - treeitem "<body>" [expanded] [selected] [ref=e85]:
+                      - generic [ref=e86]:
+                        - generic "<body>" [ref=e91]
+                        - generic [ref=e92]: == $0
+                    - group [ref=e93]:
+                      - treeitem "<div id=\"root\"> Expand …</div>" [ref=e94]:
+                        - generic [ref=e97]:
+                          - generic "<div id=\"root\">" [ref=e98]:
+                            - text: <div
+                            - generic [ref=e99]: id="root"
+                            - text: ">"
+                          - button "Expand" [ref=e101]
+                          - text: …
+                          - generic "</div>" [ref=e103]
+                      - treeitem "</body>" [ref=e104]:
+                        - generic "</body>" [ref=e108]
+                    - treeitem "</html>" [ref=e109]:
+                      - generic "</html>" [ref=e113]
+              - navigation "DOM tree breadcrumbs" [ref=e116]:
+                - list [ref=e118]:
+                  - listitem [ref=e119]:
+                    - link "html" [ref=e120] [cursor=pointer]:
+                      - /url: "#"
+                      - generic [ref=e122]: html
+                  - listitem [ref=e123]:
+                    - link "body" [ref=e124] [cursor=pointer]:
+                      - /url: "#"
+                      - generic [ref=e126]: body
+          - generic [ref=e129]:
+            - navigation "Side panel toolbar" [ref=e130]:
+              - generic:
+                - tablist:
+                  - tab "Styles" [selected] [ref=e131]:
+                    - generic [ref=e132]: Styles
+                  - tab "Computed" [ref=e133]:
+                    - generic [ref=e134]: Computed
+                  - tab "Layout" [ref=e135]:
+                    - generic [ref=e136]: Layout
+                  - tab "Event Listeners" [ref=e137]:
+                    - generic [ref=e138]: Event Listeners
+                  - tab "DOM Breakpoints" [ref=e139]:
+                    - generic [ref=e140]: DOM Breakpoints
+                  - tab "Properties" [ref=e141]:
+                    - generic [ref=e142]: Properties
+                  - tab "Accessibility" [ref=e143]:
+                    - generic [ref=e144]: Accessibility
+            - complementary "Side panel content" [ref=e146]:
+              - tabpanel "Styles panel" [ref=e147]:
+                - generic [ref=e152]:
+                  - generic [ref=e154]:
+                    - generic [ref=e158]:
+                      - textbox "Filter" [ref=e163]
+                      - generic "Toggle Element State" [ref=e164]:
+                        - button "Toggle Element State" [ref=e165]
+                      - generic "Element Classes" [ref=e167]:
+                        - button "Element Classes" [ref=e168]
+                      - generic "New Style Rule" [ref=e170]:
+                        - button "New Style Rule" [ref=e171]
+                      - generic "Toggle common rendering emulations" [ref=e174]:
+                        - button "Toggle common rendering emulations" [ref=e175]
+                      - generic "Show Computed Styles sidebar" [ref=e177]:
+                        - button "Show Computed Styles sidebar" [ref=e178]
+                    - list [ref=e180]:
+                      - listitem "element.style, css selector" [ref=e181]:
+                        - generic [ref=e183]:
+                          - generic [ref=e185]: "element.style {"
+                          - generic [ref=e186]:
+                            - generic:
+                              - tree
+                          - generic [ref=e187]: "}"
+                      - listitem "body, css selector" [ref=e188]:
+                        - link "index-BQUilJub.css:1" [ref=e190] [cursor=pointer]
+                        - generic [ref=e191]:
+                          - generic [ref=e193]:
+                            - generic "CSS selector" [ref=e194]: body
+                            - text: "{"
+                          - tree [ref=e197]:
+                            - 'treeitem "CSS property name: overscroll-behavior : CSS property value: none;" [ref=e198]':
+                              - text: overscroll-behavior
+                              - generic [ref=e199]: ":"
+                              - text: none;
+                          - generic [ref=e201]: "}"
+                      - listitem "body, css selector" [ref=e202]:
+                        - link "index-BQUilJub.css:1" [ref=e204] [cursor=pointer]
+                        - generic [ref=e205]:
+                          - generic [ref=e207]:
+                            - generic "CSS selector" [ref=e208]: body
+                            - text: "{"
+                          - tree [ref=e211]:
+                            - 'treeitem "CSS property name: -webkit-font-smoothing : CSS property value: antialiased;" [ref=e212]':
+                              - text: "-webkit-font-smoothing"
+                              - generic [ref=e213]: ":"
+                              - text: antialiased;
+                            - 'treeitem "Invalid property value CSS property name: -moz-osx-font-smoothing : CSS property value: grayscale;" [ref=e214]':
+                              - generic "Invalid property value" [ref=e215]
+                              - text: "-moz-osx-font-smoothing"
+                              - generic [ref=e216]: ":"
+                              - text: grayscale;
+                            - 'treeitem "CSS property name: overflow : CSS property value: hidden;" [ref=e217]':
+                              - text: overflow
+                              - generic [ref=e218]: ":"
+                              - text: hidden;
+                          - generic [ref=e220]: "}"
+                      - listitem "body, css selector" [ref=e221]:
+                        - link "index-BQUilJub.css:1" [ref=e223] [cursor=pointer]
+                        - generic [ref=e224]:
+                          - generic [ref=e226]:
+                            - generic "CSS selector" [ref=e227]: body
+                            - text: "{"
+                          - tree [ref=e230]:
+                            - 'treeitem "CSS property name: background-color : CSS property value: hsl(var(--background));" [ref=e231]':
+                              - text: background-color
+                              - generic [ref=e232]: ":"
+                              - text: hsl(#ffffff);
+                            - 'treeitem "CSS property name: color : CSS property value: hsl(var(--foreground));" [ref=e233]':
+                              - text: color
+                              - generic [ref=e234]: ":"
+                              - text: hsl(oklch(.145 0 0));
+                            - 'treeitem "CSS property name: -webkit-font-smoothing : CSS property value: antialiased;" [ref=e235]':
+                              - text: "-webkit-font-smoothing"
+                              - generic [ref=e236]: ":"
+                              - text: antialiased;
+                            - 'treeitem "Invalid property value CSS property name: -moz-osx-font-smoothing : CSS property value: grayscale;" [ref=e237]':
+                              - generic "Invalid property value" [ref=e238]
+                              - text: "-moz-osx-font-smoothing"
+                              - generic [ref=e239]: ":"
+                              - text: grayscale;
+                          - generic [ref=e240]: "}"
+                      - listitem "body, css selector" [ref=e241]:
+                        - link "index-BQUilJub.css:1" [ref=e243] [cursor=pointer]
+                        - generic [ref=e244]:
+                          - generic [ref=e246]:
+                            - generic "CSS selector" [ref=e247]: body
+                            - text: "{"
+                          - tree [ref=e250]:
+                            - 'treeitem "CSS property name: margin : CSS property value: 0;" [ref=e251]':
+                              - text: margin
+                              - generic [ref=e252]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: line-height : CSS property value: inherit;" [ref=e254]':
+                              - text: line-height
+                              - generic [ref=e255]: ":"
+                              - text: inherit;
+                          - generic [ref=e256]: "}"
+                      - listitem "*, css selector" [ref=e257]:
+                        - link "index-BQUilJub.css:1" [ref=e259] [cursor=pointer]
+                        - generic [ref=e260]:
+                          - generic [ref=e262]:
+                            - generic "CSS selector" [ref=e263]: "*"
+                            - text: "{"
+                          - tree [ref=e266]:
+                            - 'treeitem "CSS property name: border-color : CSS property value: hsl(var(--border));" [ref=e267]':
+                              - text: border-color
+                              - generic [ref=e268]: ":"
+                              - text: hsl(rgba(0, 0, 0, .1));
+                            - 'treeitem "CSS property name: outline-color : CSS property value: hsl(var(--ring) / .5);" [ref=e270]':
+                              - text: outline-color
+                              - generic [ref=e271]: ":"
+                              - text: hsl(oklch(.708 0 0) / .5);
+                          - generic [ref=e272]: "}"
+                      - listitem "*, :before, :after, css selector" [ref=e273]:
+                        - link "index-BQUilJub.css:1" [ref=e275] [cursor=pointer]
+                        - generic [ref=e276]:
+                          - generic [ref=e278]:
+                            - generic "CSS selector" [ref=e279]: "*, :before, :after"
+                            - text: "{"
+                          - tree [ref=e282]:
+                            - 'treeitem "CSS property name: box-sizing : CSS property value: border-box;" [ref=e283]':
+                              - text: box-sizing
+                              - generic [ref=e284]: ":"
+                              - text: border-box;
+                            - 'treeitem "CSS property name: border-width : CSS property value: 0;" [ref=e285]':
+                              - text: border-width
+                              - generic [ref=e286]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: border-style : CSS property value: solid;" [ref=e288]':
+                              - text: border-style
+                              - generic [ref=e289]: ":"
+                              - text: solid;
+                            - 'treeitem "CSS property name: border-color : CSS property value: #e5e7eb;" [ref=e291]':
+                              - text: border-color
+                              - generic [ref=e292]: ":"
+                              - 'generic "CSS property value: #e5e7eb" [ref=e294]':
+                                - generic [ref=e295]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e296]
+                                  - generic: "#e5e7eb"
+                              - text: ;
+                          - generic [ref=e298]: "}"
+                      - listitem "*, :before, :after, css selector" [ref=e299]:
+                        - link "index-BQUilJub.css:1" [ref=e301] [cursor=pointer]
+                        - generic [ref=e302]:
+                          - generic [ref=e304]:
+                            - generic "CSS selector" [ref=e305]: "*, :before, :after"
+                            - text: "{"
+                          - tree [ref=e308]:
+                            - 'treeitem "CSS property name: --tw-border-spacing-x : CSS property value: 0;" [ref=e309]':
+                              - text: "--tw-border-spacing-x"
+                              - generic [ref=e310]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-border-spacing-y : CSS property value: 0;" [ref=e311]':
+                              - text: "--tw-border-spacing-y"
+                              - generic [ref=e312]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-translate-x : CSS property value: 0;" [ref=e313]':
+                              - text: "--tw-translate-x"
+                              - generic [ref=e314]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-translate-y : CSS property value: 0;" [ref=e315]':
+                              - text: "--tw-translate-y"
+                              - generic [ref=e316]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-rotate : CSS property value: 0;" [ref=e317]':
+                              - text: "--tw-rotate"
+                              - generic [ref=e318]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-skew-x : CSS property value: 0;" [ref=e319]':
+                              - text: "--tw-skew-x"
+                              - generic [ref=e320]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-skew-y : CSS property value: 0;" [ref=e321]':
+                              - text: "--tw-skew-y"
+                              - generic [ref=e322]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-scale-x : CSS property value: 1;" [ref=e323]':
+                              - text: "--tw-scale-x"
+                              - generic [ref=e324]: ":"
+                              - text: 1;
+                            - 'treeitem "CSS property name: --tw-scale-y : CSS property value: 1;" [ref=e325]':
+                              - text: "--tw-scale-y"
+                              - generic [ref=e326]: ":"
+                              - text: 1;
+                            - 'treeitem "CSS property name: --tw-pan-x : CSS property value: ;" [ref=e327]':
+                              - text: "--tw-pan-x"
+                              - generic [ref=e328]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-pan-y : CSS property value: ;" [ref=e329]':
+                              - text: "--tw-pan-y"
+                              - generic [ref=e330]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-pinch-zoom : CSS property value: ;" [ref=e331]':
+                              - text: "--tw-pinch-zoom"
+                              - generic [ref=e332]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-scroll-snap-strictness : CSS property value: proximity;" [ref=e333]':
+                              - text: "--tw-scroll-snap-strictness"
+                              - generic [ref=e334]: ":"
+                              - text: proximity;
+                            - 'treeitem "CSS property name: --tw-gradient-from-position : CSS property value: ;" [ref=e335]':
+                              - text: "--tw-gradient-from-position"
+                              - generic [ref=e336]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-gradient-via-position : CSS property value: ;" [ref=e337]':
+                              - text: "--tw-gradient-via-position"
+                              - generic [ref=e338]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-gradient-to-position : CSS property value: ;" [ref=e339]':
+                              - text: "--tw-gradient-to-position"
+                              - generic [ref=e340]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ordinal : CSS property value: ;" [ref=e341]':
+                              - text: "--tw-ordinal"
+                              - generic [ref=e342]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-slashed-zero : CSS property value: ;" [ref=e343]':
+                              - text: "--tw-slashed-zero"
+                              - generic [ref=e344]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-numeric-figure : CSS property value: ;" [ref=e345]':
+                              - text: "--tw-numeric-figure"
+                              - generic [ref=e346]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-numeric-spacing : CSS property value: ;" [ref=e347]':
+                              - text: "--tw-numeric-spacing"
+                              - generic [ref=e348]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-numeric-fraction : CSS property value: ;" [ref=e349]':
+                              - text: "--tw-numeric-fraction"
+                              - generic [ref=e350]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-inset : CSS property value: ;" [ref=e351]':
+                              - text: "--tw-ring-inset"
+                              - generic [ref=e352]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-offset-width : CSS property value: 0px;" [ref=e353]':
+                              - text: "--tw-ring-offset-width"
+                              - generic [ref=e354]: ":"
+                              - text: 0px;
+                            - 'treeitem "CSS property name: --tw-ring-offset-color : CSS property value: #fff;" [ref=e355]':
+                              - text: "--tw-ring-offset-color"
+                              - generic [ref=e356]: ":"
+                              - 'generic "CSS property value: #fff" [ref=e357]':
+                                - generic [ref=e358]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e359]
+                                  - generic: "#fff"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-color : CSS property value: rgb(59 130 246 / .5);" [ref=e361]':
+                              - text: "--tw-ring-color"
+                              - generic [ref=e362]: ":"
+                              - 'generic "CSS property value: rgb(59 130 246 / .5)" [ref=e363]':
+                                - generic [ref=e364]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e365]
+                                  - generic: rgb(59 130 246 / .5)
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-offset-shadow : CSS property value: 0 0 #0000;" [ref=e367]':
+                              - text: "--tw-ring-offset-shadow"
+                              - generic [ref=e368]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e369]':
+                                - text: 0 0
+                                - generic [ref=e370]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e371]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-shadow : CSS property value: 0 0 #0000;" [ref=e373]':
+                              - text: "--tw-ring-shadow"
+                              - generic [ref=e374]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e375]':
+                                - text: 0 0
+                                - generic [ref=e376]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e377]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-shadow : CSS property value: 0 0 #0000;" [ref=e379]':
+                              - text: "--tw-shadow"
+                              - generic [ref=e380]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e381]':
+                                - text: 0 0
+                                - generic [ref=e382]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e383]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-shadow-colored : CSS property value: 0 0 #0000;" [ref=e385]':
+                              - text: "--tw-shadow-colored"
+                              - generic [ref=e386]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e387]':
+                                - text: 0 0
+                                - generic [ref=e388]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e389]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-blur : CSS property value: ;" [ref=e391]':
+                              - text: "--tw-blur"
+                              - generic [ref=e392]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-brightness : CSS property value: ;" [ref=e393]':
+                              - text: "--tw-brightness"
+                              - generic [ref=e394]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contrast : CSS property value: ;" [ref=e395]':
+                              - text: "--tw-contrast"
+                              - generic [ref=e396]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-grayscale : CSS property value: ;" [ref=e397]':
+                              - text: "--tw-grayscale"
+                              - generic [ref=e398]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-hue-rotate : CSS property value: ;" [ref=e399]':
+                              - text: "--tw-hue-rotate"
+                              - generic [ref=e400]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-invert : CSS property value: ;" [ref=e401]':
+                              - text: "--tw-invert"
+                              - generic [ref=e402]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-saturate : CSS property value: ;" [ref=e403]':
+                              - text: "--tw-saturate"
+                              - generic [ref=e404]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-sepia : CSS property value: ;" [ref=e405]':
+                              - text: "--tw-sepia"
+                              - generic [ref=e406]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-drop-shadow : CSS property value: ;" [ref=e407]':
+                              - text: "--tw-drop-shadow"
+                              - generic [ref=e408]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-blur : CSS property value: ;" [ref=e409]':
+                              - text: "--tw-backdrop-blur"
+                              - generic [ref=e410]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-brightness : CSS property value: ;" [ref=e411]':
+                              - text: "--tw-backdrop-brightness"
+                              - generic [ref=e412]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-contrast : CSS property value: ;" [ref=e413]':
+                              - text: "--tw-backdrop-contrast"
+                              - generic [ref=e414]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-grayscale : CSS property value: ;" [ref=e415]':
+                              - text: "--tw-backdrop-grayscale"
+                              - generic [ref=e416]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-hue-rotate : CSS property value: ;" [ref=e417]':
+                              - text: "--tw-backdrop-hue-rotate"
+                              - generic [ref=e418]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-invert : CSS property value: ;" [ref=e419]':
+                              - text: "--tw-backdrop-invert"
+                              - generic [ref=e420]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-opacity : CSS property value: ;" [ref=e421]':
+                              - text: "--tw-backdrop-opacity"
+                              - generic [ref=e422]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-saturate : CSS property value: ;" [ref=e423]':
+                              - text: "--tw-backdrop-saturate"
+                              - generic [ref=e424]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-sepia : CSS property value: ;" [ref=e425]':
+                              - text: "--tw-backdrop-sepia"
+                              - generic [ref=e426]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contain-size : CSS property value: ;" [ref=e427]':
+                              - text: "--tw-contain-size"
+                              - generic [ref=e428]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contain-layout : CSS property value: ;" [ref=e429]':
+                              - text: "--tw-contain-layout"
+                              - generic [ref=e430]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contain-paint : CSS property value: ;" [ref=e431]':
+                              - text: "--tw-contain-paint"
+                              - generic [ref=e432]: ":"
+                              - text: ;
+                          - button "Show all properties (1 more)" [ref=e433]:
+                            - generic: Show all properties (1 more)
+                          - generic [ref=e434]: "}"
+                      - listitem "body, css selector" [ref=e435]:
+                        - generic [ref=e436]: user agent stylesheet
+                        - generic [ref=e437]:
+                          - generic [ref=e439]:
+                            - generic "CSS selector" [ref=e440]: body
+                            - text: "{"
+                          - tree [ref=e443]:
+                            - 'treeitem "CSS property name: display : CSS property value: block;" [ref=e444]':
+                              - text: display
+                              - generic [ref=e445]: ":"
+                              - text: block;
+                            - 'treeitem "CSS property name: margin : CSS property value: 8px;" [ref=e446]':
+                              - text: margin
+                              - generic [ref=e447]: ":"
+                              - text: 8px;
+                          - generic [ref=e449]: "}"
+                      - generic [ref=e450]:
+                        - text: Inherited from
+                        - button "html" [ref=e452] [cursor=pointer]
+                      - listitem ":root, css selector" [ref=e453]:
+                        - link "index-BQUilJub.css:1" [ref=e455] [cursor=pointer]
+                        - generic [ref=e456]:
+                          - generic [ref=e458]:
+                            - generic "CSS selector" [ref=e459]: :root
+                            - text: "{"
+                          - tree [ref=e462]:
+                            - 'treeitem "CSS property name: --font-size : CSS property value: 16px;" [ref=e463]':
+                              - text: "--font-size"
+                              - generic [ref=e464]: ":"
+                              - text: 16px;
+                            - 'treeitem "CSS property name: --background : CSS property value: #ffffff;" [ref=e465]':
+                              - text: "--background"
+                              - generic [ref=e466]: ":"
+                              - 'generic "CSS property value: #ffffff" [ref=e467]':
+                                - generic [ref=e468]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e469]
+                                  - generic: "#ffffff"
+                              - text: ;
+                            - 'treeitem "CSS property name: --foreground : CSS property value: oklch(.145 0 0);" [ref=e471]':
+                              - text: "--foreground"
+                              - generic [ref=e472]: ":"
+                              - 'generic "CSS property value: oklch(.145 0 0)" [ref=e473]':
+                                - generic [ref=e474]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e475]
+                                  - generic: oklch(.145 0 0)
+                              - text: ;
+                            - 'treeitem "CSS property name: --card : CSS property value: #ffffff;" [ref=e477]':
+                              - text: "--card"
+                              - generic [ref=e478]: ":"
+                              - 'generic "CSS property value: #ffffff" [ref=e479]':
+                                - generic [ref=e480]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e481]
+                                  - generic: "#ffffff"
+                              - text: ;
+                            - 'treeitem "CSS property name: --card-foreground : CSS property value: oklch(.145 0 0);" [ref=e483]':
+                              - text: "--card-foreground"
+                              - generic [ref=e484]: ":"
+                              - 'generic "CSS property value: oklch(.145 0 0)" [ref=e485]':
+                                - generic [ref=e486]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e487]
+                                  - generic: oklch(.145 0 0)
+                              - text: ;
+                            - 'treeitem "CSS property name: --popover : CSS property value: oklch(1 0 0);" [ref=e489]':
+                              - text: "--popover"
+                              - generic [ref=e490]: ":"
+                              - 'generic "CSS property value: oklch(1 0 0)" [ref=e491]':
+                                - generic [ref=e492]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e493]
+                                  - generic: oklch(1 0 0)
+                              - text: ;
+                            - 'treeitem "CSS property name: --popover-foreground : CSS property value: oklch(.145 0 0);" [ref=e495]':
+                              - text: "--popover-foreground"
+                              - generic [ref=e496]: ":"
+                              - 'generic "CSS property value: oklch(.145 0 0)" [ref=e497]':
+                                - generic [ref=e498]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e499]
+                                  - generic: oklch(.145 0 0)
+                              - text: ;
+                            - 'treeitem "CSS property name: --primary : CSS property value: #030213;" [ref=e501]':
+                              - text: "--primary"
+                              - generic [ref=e502]: ":"
+                              - 'generic "CSS property value: #030213" [ref=e503]':
+                                - generic [ref=e504]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e505]
+                                  - generic: "#030213"
+                              - text: ;
+                            - 'treeitem "CSS property name: --primary-foreground : CSS property value: oklch(1 0 0);" [ref=e507]':
+                              - text: "--primary-foreground"
+                              - generic [ref=e508]: ":"
+                              - 'generic "CSS property value: oklch(1 0 0)" [ref=e509]':
+                                - generic [ref=e510]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e511]
+                                  - generic: oklch(1 0 0)
+                              - text: ;
+                            - 'treeitem "CSS property name: --secondary : CSS property value: oklch(.95 .0058 264.53);" [ref=e513]':
+                              - text: "--secondary"
+                              - generic [ref=e514]: ":"
+                              - 'generic "CSS property value: oklch(.95 .0058 264.53)" [ref=e515]':
+                                - generic [ref=e516]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e517]
+                                  - generic: oklch(.95 .0058 264.53)
+                              - text: ;
+                            - 'treeitem "CSS property name: --secondary-foreground : CSS property value: #030213;" [ref=e519]':
+                              - text: "--secondary-foreground"
+                              - generic [ref=e520]: ":"
+                              - 'generic "CSS property value: #030213" [ref=e521]':
+                                - generic [ref=e522]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e523]
+                                  - generic: "#030213"
+                              - text: ;
+                            - 'treeitem "CSS property name: --muted : CSS property value: #ececf0;" [ref=e525]':
+                              - text: "--muted"
+                              - generic [ref=e526]: ":"
+                              - 'generic "CSS property value: #ececf0" [ref=e527]':
+                                - generic [ref=e528]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e529]
+                                  - generic: "#ececf0"
+                              - text: ;
+                            - 'treeitem "CSS property name: --muted-foreground : CSS property value: #717182;" [ref=e531]':
+                              - text: "--muted-foreground"
+                              - generic [ref=e532]: ":"
+                              - 'generic "CSS property value: #717182" [ref=e533]':
+                                - generic [ref=e534]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e535]
+                                  - generic: "#717182"
+                              - text: ;
+                            - 'treeitem "CSS property name: --accent : CSS property value: #e9ebef;" [ref=e537]':
+                              - text: "--accent"
+                              - generic [ref=e538]: ":"
+                              - 'generic "CSS property value: #e9ebef" [ref=e539]':
+                                - generic [ref=e540]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e541]
+                                  - generic: "#e9ebef"
+                              - text: ;
+                            - 'treeitem "CSS property name: --accent-foreground : CSS property value: #030213;" [ref=e543]':
+                              - text: "--accent-foreground"
+                              - generic [ref=e544]: ":"
+                              - 'generic "CSS property value: #030213" [ref=e545]':
+                                - generic [ref=e546]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e547]
+                                  - generic: "#030213"
+                              - text: ;
+                            - 'treeitem "CSS property name: --destructive : CSS property value: #d4183d;" [ref=e549]':
+                              - text: "--destructive"
+                              - generic [ref=e550]: ":"
+                              - 'generic "CSS property value: #d4183d" [ref=e551]':
+                                - generic [ref=e552]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e553]
+                                  - generic: "#d4183d"
+                              - text: ;
+                            - 'treeitem "CSS property name: --destructive-foreground : CSS property value: #ffffff;" [ref=e555]':
+                              - text: "--destructive-foreground"
+                              - generic [ref=e556]: ":"
+                              - 'generic "CSS property value: #ffffff" [ref=e557]':
+                                - generic [ref=e558]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e559]
+                                  - generic: "#ffffff"
+                              - text: ;
+                            - 'treeitem "CSS property name: --border : CSS property value: rgba(0, 0, 0, .1);" [ref=e561]':
+                              - text: "--border"
+                              - generic [ref=e562]: ":"
+                              - 'generic "CSS property value: rgba(0, 0, 0, .1)" [ref=e563]':
+                                - generic [ref=e564]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e565]
+                                  - generic: rgba(0, 0, 0, .1)
+                              - text: ;
+                            - 'treeitem "CSS property name: --input : CSS property value: transparent;" [ref=e567]':
+                              - text: "--input"
+                              - generic [ref=e568]: ":"
+                              - 'generic "CSS property value: transparent" [ref=e569]':
+                                - generic [ref=e570]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e571]
+                                  - generic: transparent
+                              - text: ;
+                            - 'treeitem "CSS property name: --input-background : CSS property value: #f3f3f5;" [ref=e573]':
+                              - text: "--input-background"
+                              - generic [ref=e574]: ":"
+                              - 'generic "CSS property value: #f3f3f5" [ref=e575]':
+                                - generic [ref=e576]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e577]
+                                  - generic: "#f3f3f5"
+                              - text: ;
+                            - 'treeitem "CSS property name: --switch-background : CSS property value: #cbced4;" [ref=e579]':
+                              - text: "--switch-background"
+                              - generic [ref=e580]: ":"
+                              - 'generic "CSS property value: #cbced4" [ref=e581]':
+                                - generic [ref=e582]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e583]
+                                  - generic: "#cbced4"
+                              - text: ;
+                            - 'treeitem "CSS property name: --font-weight-medium : CSS property value: 500;" [ref=e585]':
+                              - text: "--font-weight-medium"
+                              - generic [ref=e586]: ":"
+                              - text: 500;
+                            - 'treeitem "CSS property name: --font-weight-normal : CSS property value: 400;" [ref=e587]':
+                              - text: "--font-weight-normal"
+                              - generic [ref=e588]: ":"
+                              - text: 400;
+                            - 'treeitem "CSS property name: --ring : CSS property value: oklch(.708 0 0);" [ref=e589]':
+                              - text: "--ring"
+                              - generic [ref=e590]: ":"
+                              - 'generic "CSS property value: oklch(.708 0 0)" [ref=e591]':
+                                - generic [ref=e592]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e593]
+                                  - generic: oklch(.708 0 0)
+                              - text: ;
+                            - 'treeitem "CSS property name: --chart-1 : CSS property value: oklch(.646 .222 41.116);" [ref=e595]':
+                              - text: "--chart-1"
+                              - generic [ref=e596]: ":"
+                              - 'generic "CSS property value: oklch(.646 .222 41.116)" [ref=e597]':
+                                - generic [ref=e598]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e599]
+                                  - generic: oklch(.646 .222 41.116)
+                              - text: ;
+                            - 'treeitem "CSS property name: --chart-2 : CSS property value: oklch(.6 .118 184.704);" [ref=e601]':
+                              - text: "--chart-2"
+                              - generic [ref=e602]: ":"
+                              - 'generic "CSS property value: oklch(.6 .118 184.704)" [ref=e603]':
+                                - generic [ref=e604]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e605]
+                                  - generic: oklch(.6 .118 184.704)
+                              - text: ;
+                            - 'treeitem "CSS property name: --chart-3 : CSS property value: oklch(.398 .07 227.392);" [ref=e607]':
+                              - text: "--chart-3"
+                              - generic [ref=e608]: ":"
+                              - 'generic "CSS property value: oklch(.398 .07 227.392)" [ref=e609]':
+                                - generic [ref=e610]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e611]
+                                  - generic: oklch(.398 .07 227.392)
+                              - text: ;
+                            - 'treeitem "CSS property name: --chart-4 : CSS property value: oklch(.828 .189 84.429);" [ref=e613]':
+                              - text: "--chart-4"
+                              - generic [ref=e614]: ":"
+                              - 'generic "CSS property value: oklch(.828 .189 84.429)" [ref=e615]':
+                                - generic [ref=e616]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e617]
+                                  - generic: oklch(.828 .189 84.429)
+                              - text: ;
+                            - 'treeitem "CSS property name: --chart-5 : CSS property value: oklch(.769 .188 70.08);" [ref=e619]':
+                              - text: "--chart-5"
+                              - generic [ref=e620]: ":"
+                              - 'generic "CSS property value: oklch(.769 .188 70.08)" [ref=e621]':
+                                - generic [ref=e622]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e623]
+                                  - generic: oklch(.769 .188 70.08)
+                              - text: ;
+                            - 'treeitem "CSS property name: --radius : CSS property value: .625rem;" [ref=e625]':
+                              - text: "--radius"
+                              - generic [ref=e626]: ":"
+                              - text: .625rem;
+                            - 'treeitem "CSS property name: --sidebar : CSS property value: oklch(.985 0 0);" [ref=e627]':
+                              - text: "--sidebar"
+                              - generic [ref=e628]: ":"
+                              - 'generic "CSS property value: oklch(.985 0 0)" [ref=e629]':
+                                - generic [ref=e630]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e631]
+                                  - generic: oklch(.985 0 0)
+                              - text: ;
+                            - 'treeitem "CSS property name: --sidebar-foreground : CSS property value: oklch(.145 0 0);" [ref=e633]':
+                              - text: "--sidebar-foreground"
+                              - generic [ref=e634]: ":"
+                              - 'generic "CSS property value: oklch(.145 0 0)" [ref=e635]':
+                                - generic [ref=e636]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e637]
+                                  - generic: oklch(.145 0 0)
+                              - text: ;
+                            - 'treeitem "CSS property name: --sidebar-primary : CSS property value: #030213;" [ref=e639]':
+                              - text: "--sidebar-primary"
+                              - generic [ref=e640]: ":"
+                              - 'generic "CSS property value: #030213" [ref=e641]':
+                                - generic [ref=e642]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e643]
+                                  - generic: "#030213"
+                              - text: ;
+                            - 'treeitem "CSS property name: --sidebar-primary-foreground : CSS property value: oklch(.985 0 0);" [ref=e645]':
+                              - text: "--sidebar-primary-foreground"
+                              - generic [ref=e646]: ":"
+                              - 'generic "CSS property value: oklch(.985 0 0)" [ref=e647]':
+                                - generic [ref=e648]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e649]
+                                  - generic: oklch(.985 0 0)
+                              - text: ;
+                            - 'treeitem "CSS property name: --sidebar-accent : CSS property value: oklch(.97 0 0);" [ref=e651]':
+                              - text: "--sidebar-accent"
+                              - generic [ref=e652]: ":"
+                              - 'generic "CSS property value: oklch(.97 0 0)" [ref=e653]':
+                                - generic [ref=e654]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e655]
+                                  - generic: oklch(.97 0 0)
+                              - text: ;
+                            - 'treeitem "CSS property name: --sidebar-accent-foreground : CSS property value: oklch(.205 0 0);" [ref=e657]':
+                              - text: "--sidebar-accent-foreground"
+                              - generic [ref=e658]: ":"
+                              - 'generic "CSS property value: oklch(.205 0 0)" [ref=e659]':
+                                - generic [ref=e660]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e661]
+                                  - generic: oklch(.205 0 0)
+                              - text: ;
+                            - 'treeitem "CSS property name: --sidebar-border : CSS property value: oklch(.922 0 0);" [ref=e663]':
+                              - text: "--sidebar-border"
+                              - generic [ref=e664]: ":"
+                              - 'generic "CSS property value: oklch(.922 0 0)" [ref=e665]':
+                                - generic [ref=e666]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e667]
+                                  - generic: oklch(.922 0 0)
+                              - text: ;
+                            - 'treeitem "CSS property name: --sidebar-ring : CSS property value: oklch(.708 0 0);" [ref=e669]':
+                              - text: "--sidebar-ring"
+                              - generic [ref=e670]: ":"
+                              - 'generic "CSS property value: oklch(.708 0 0)" [ref=e671]':
+                                - generic [ref=e672]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e673]
+                                  - generic: oklch(.708 0 0)
+                              - text: ;
+                          - generic [ref=e675]: "}"
+                      - listitem "html, css selector" [ref=e676]:
+                        - link "index-BQUilJub.css:1" [ref=e678] [cursor=pointer]
+                        - generic [ref=e679]:
+                          - generic [ref=e681]:
+                            - generic "CSS selector" [ref=e682]: html
+                            - text: "{"
+                          - tree [ref=e685]:
+                            - 'treeitem "CSS property name: font-size : CSS property value: var(--font-size);" [ref=e686]':
+                              - text: font-size
+                              - generic [ref=e687]: ":"
+                              - 'generic "CSS property value: var(--font-size)" [ref=e688]':
+                                - text: var(--font-size)
+                                - generic [ref=e689]:
+                                  - text: var(
+                                  - link "--font-size" [ref=e691] [cursor=pointer]
+                                  - text: )
+                              - text: ;
+                            - 'treeitem "CSS property name: overflow : CSS property value: hidden;" [ref=e692]':
+                              - text: overflow
+                              - generic [ref=e693]: ":"
+                              - text: hidden;
+                          - generic [ref=e695]: "}"
+                      - listitem "html, :host, css selector" [ref=e696]:
+                        - link "index-BQUilJub.css:1" [ref=e698] [cursor=pointer]
+                        - generic [ref=e699]:
+                          - generic [ref=e701]:
+                            - generic "CSS selector" [ref=e702]: html, :host
+                            - text: "{"
+                          - tree [ref=e705]:
+                            - 'treeitem "CSS property name: line-height : CSS property value: 1.5;" [ref=e706]':
+                              - text: line-height
+                              - generic [ref=e707]: ":"
+                              - text: 1.5;
+                            - 'treeitem "CSS property name: -webkit-text-size-adjust : CSS property value: 100%;" [ref=e708]':
+                              - text: "-webkit-text-size-adjust"
+                              - generic [ref=e709]: ":"
+                              - text: 100%;
+                            - 'treeitem "Invalid property value CSS property name: -moz-tab-size : CSS property value: 4;" [ref=e710]':
+                              - generic "Invalid property value" [ref=e711]
+                              - text: "-moz-tab-size"
+                              - generic [ref=e712]: ":"
+                              - text: 4;
+                            - 'treeitem "Invalid property value CSS property name: -o-tab-size : CSS property value: 4;" [ref=e713]':
+                              - generic "Invalid property value" [ref=e714]
+                              - text: "-o-tab-size"
+                              - generic [ref=e715]: ":"
+                              - text: 4;
+                            - 'treeitem "CSS property name: tab-size : CSS property value: 4;" [ref=e716]':
+                              - text: tab-size
+                              - generic [ref=e717]: ":"
+                              - text: 4;
+                            - 'treeitem "CSS property name: font-family : CSS property value: ui-sans-serif,system-ui,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",Segoe UI Symbol,\"Noto Color Emoji\";" [ref=e718]':
+                              - text: font-family
+                              - generic [ref=e719]: ":"
+                              - 'generic "CSS property value: ui-sans-serif,system-ui,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",Segoe UI Symbol,\"Noto Color Emoji\"" [ref=e720]': ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji"
+                              - text: ;
+                            - 'treeitem "CSS property name: font-feature-settings : CSS property value: normal;" [ref=e721]':
+                              - text: font-feature-settings
+                              - generic [ref=e722]: ":"
+                              - text: normal;
+                            - 'treeitem "CSS property name: font-variation-settings : CSS property value: normal;" [ref=e723]':
+                              - text: font-variation-settings
+                              - generic [ref=e724]: ":"
+                              - text: normal;
+                            - 'treeitem "CSS property name: -webkit-tap-highlight-color : CSS property value: transparent;" [ref=e725]':
+                              - text: "-webkit-tap-highlight-color"
+                              - generic [ref=e726]: ":"
+                              - 'generic "CSS property value: transparent" [ref=e727]':
+                                - generic [ref=e728]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e729]
+                                  - generic: transparent
+                              - text: ;
+                          - generic [ref=e731]: "}"
+                      - listitem "*, :before, :after, css selector" [ref=e732]:
+                        - link "index-BQUilJub.css:1" [ref=e734] [cursor=pointer]
+                        - generic [ref=e735]:
+                          - generic [ref=e737]:
+                            - generic "CSS selector" [ref=e738]: "*, :before, :after"
+                            - text: "{"
+                          - tree [ref=e741]:
+                            - 'treeitem "CSS property name: --tw-border-spacing-x : CSS property value: 0;" [ref=e742]':
+                              - text: "--tw-border-spacing-x"
+                              - generic [ref=e743]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-border-spacing-y : CSS property value: 0;" [ref=e744]':
+                              - text: "--tw-border-spacing-y"
+                              - generic [ref=e745]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-translate-x : CSS property value: 0;" [ref=e746]':
+                              - text: "--tw-translate-x"
+                              - generic [ref=e747]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-translate-y : CSS property value: 0;" [ref=e748]':
+                              - text: "--tw-translate-y"
+                              - generic [ref=e749]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-rotate : CSS property value: 0;" [ref=e750]':
+                              - text: "--tw-rotate"
+                              - generic [ref=e751]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-skew-x : CSS property value: 0;" [ref=e752]':
+                              - text: "--tw-skew-x"
+                              - generic [ref=e753]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-skew-y : CSS property value: 0;" [ref=e754]':
+                              - text: "--tw-skew-y"
+                              - generic [ref=e755]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-scale-x : CSS property value: 1;" [ref=e756]':
+                              - text: "--tw-scale-x"
+                              - generic [ref=e757]: ":"
+                              - text: 1;
+                            - 'treeitem "CSS property name: --tw-scale-y : CSS property value: 1;" [ref=e758]':
+                              - text: "--tw-scale-y"
+                              - generic [ref=e759]: ":"
+                              - text: 1;
+                            - 'treeitem "CSS property name: --tw-pan-x : CSS property value: ;" [ref=e760]':
+                              - text: "--tw-pan-x"
+                              - generic [ref=e761]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-pan-y : CSS property value: ;" [ref=e762]':
+                              - text: "--tw-pan-y"
+                              - generic [ref=e763]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-pinch-zoom : CSS property value: ;" [ref=e764]':
+                              - text: "--tw-pinch-zoom"
+                              - generic [ref=e765]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-scroll-snap-strictness : CSS property value: proximity;" [ref=e766]':
+                              - text: "--tw-scroll-snap-strictness"
+                              - generic [ref=e767]: ":"
+                              - text: proximity;
+                            - 'treeitem "CSS property name: --tw-gradient-from-position : CSS property value: ;" [ref=e768]':
+                              - text: "--tw-gradient-from-position"
+                              - generic [ref=e769]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-gradient-via-position : CSS property value: ;" [ref=e770]':
+                              - text: "--tw-gradient-via-position"
+                              - generic [ref=e771]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-gradient-to-position : CSS property value: ;" [ref=e772]':
+                              - text: "--tw-gradient-to-position"
+                              - generic [ref=e773]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ordinal : CSS property value: ;" [ref=e774]':
+                              - text: "--tw-ordinal"
+                              - generic [ref=e775]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-slashed-zero : CSS property value: ;" [ref=e776]':
+                              - text: "--tw-slashed-zero"
+                              - generic [ref=e777]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-numeric-figure : CSS property value: ;" [ref=e778]':
+                              - text: "--tw-numeric-figure"
+                              - generic [ref=e779]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-numeric-spacing : CSS property value: ;" [ref=e780]':
+                              - text: "--tw-numeric-spacing"
+                              - generic [ref=e781]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-numeric-fraction : CSS property value: ;" [ref=e782]':
+                              - text: "--tw-numeric-fraction"
+                              - generic [ref=e783]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-inset : CSS property value: ;" [ref=e784]':
+                              - text: "--tw-ring-inset"
+                              - generic [ref=e785]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-offset-width : CSS property value: 0px;" [ref=e786]':
+                              - text: "--tw-ring-offset-width"
+                              - generic [ref=e787]: ":"
+                              - text: 0px;
+                            - 'treeitem "CSS property name: --tw-ring-offset-color : CSS property value: #fff;" [ref=e788]':
+                              - text: "--tw-ring-offset-color"
+                              - generic [ref=e789]: ":"
+                              - 'generic "CSS property value: #fff" [ref=e790]':
+                                - generic [ref=e791]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e792]
+                                  - generic: "#fff"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-color : CSS property value: rgb(59 130 246 / .5);" [ref=e794]':
+                              - text: "--tw-ring-color"
+                              - generic [ref=e795]: ":"
+                              - 'generic "CSS property value: rgb(59 130 246 / .5)" [ref=e796]':
+                                - generic [ref=e797]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e798]
+                                  - generic: rgb(59 130 246 / .5)
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-offset-shadow : CSS property value: 0 0 #0000;" [ref=e800]':
+                              - text: "--tw-ring-offset-shadow"
+                              - generic [ref=e801]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e802]':
+                                - text: 0 0
+                                - generic [ref=e803]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e804]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-shadow : CSS property value: 0 0 #0000;" [ref=e806]':
+                              - text: "--tw-ring-shadow"
+                              - generic [ref=e807]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e808]':
+                                - text: 0 0
+                                - generic [ref=e809]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e810]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-shadow : CSS property value: 0 0 #0000;" [ref=e812]':
+                              - text: "--tw-shadow"
+                              - generic [ref=e813]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e814]':
+                                - text: 0 0
+                                - generic [ref=e815]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e816]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-shadow-colored : CSS property value: 0 0 #0000;" [ref=e818]':
+                              - text: "--tw-shadow-colored"
+                              - generic [ref=e819]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e820]':
+                                - text: 0 0
+                                - generic [ref=e821]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e822]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-blur : CSS property value: ;" [ref=e824]':
+                              - text: "--tw-blur"
+                              - generic [ref=e825]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-brightness : CSS property value: ;" [ref=e826]':
+                              - text: "--tw-brightness"
+                              - generic [ref=e827]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contrast : CSS property value: ;" [ref=e828]':
+                              - text: "--tw-contrast"
+                              - generic [ref=e829]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-grayscale : CSS property value: ;" [ref=e830]':
+                              - text: "--tw-grayscale"
+                              - generic [ref=e831]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-hue-rotate : CSS property value: ;" [ref=e832]':
+                              - text: "--tw-hue-rotate"
+                              - generic [ref=e833]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-invert : CSS property value: ;" [ref=e834]':
+                              - text: "--tw-invert"
+                              - generic [ref=e835]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-saturate : CSS property value: ;" [ref=e836]':
+                              - text: "--tw-saturate"
+                              - generic [ref=e837]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-sepia : CSS property value: ;" [ref=e838]':
+                              - text: "--tw-sepia"
+                              - generic [ref=e839]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-drop-shadow : CSS property value: ;" [ref=e840]':
+                              - text: "--tw-drop-shadow"
+                              - generic [ref=e841]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-blur : CSS property value: ;" [ref=e842]':
+                              - text: "--tw-backdrop-blur"
+                              - generic [ref=e843]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-brightness : CSS property value: ;" [ref=e844]':
+                              - text: "--tw-backdrop-brightness"
+                              - generic [ref=e845]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-contrast : CSS property value: ;" [ref=e846]':
+                              - text: "--tw-backdrop-contrast"
+                              - generic [ref=e847]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-grayscale : CSS property value: ;" [ref=e848]':
+                              - text: "--tw-backdrop-grayscale"
+                              - generic [ref=e849]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-hue-rotate : CSS property value: ;" [ref=e850]':
+                              - text: "--tw-backdrop-hue-rotate"
+                              - generic [ref=e851]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-invert : CSS property value: ;" [ref=e852]':
+                              - text: "--tw-backdrop-invert"
+                              - generic [ref=e853]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-opacity : CSS property value: ;" [ref=e854]':
+                              - text: "--tw-backdrop-opacity"
+                              - generic [ref=e855]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-saturate : CSS property value: ;" [ref=e856]':
+                              - text: "--tw-backdrop-saturate"
+                              - generic [ref=e857]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-sepia : CSS property value: ;" [ref=e858]':
+                              - text: "--tw-backdrop-sepia"
+                              - generic [ref=e859]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contain-size : CSS property value: ;" [ref=e860]':
+                              - text: "--tw-contain-size"
+                              - generic [ref=e861]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contain-layout : CSS property value: ;" [ref=e862]':
+                              - text: "--tw-contain-layout"
+                              - generic [ref=e863]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contain-paint : CSS property value: ;" [ref=e864]':
+                              - text: "--tw-contain-paint"
+                              - generic [ref=e865]: ":"
+                              - text: ;
+                          - button "Show all properties (1 more)" [ref=e866]:
+                            - generic: Show all properties (1 more)
+                          - generic [ref=e867]: "}"
+                      - generic [ref=e868]: Pseudo ::before element
+                      - listitem ":before, :after, css selector" [ref=e869]:
+                        - link "index-BQUilJub.css:1" [ref=e871] [cursor=pointer]
+                        - generic [ref=e872]:
+                          - generic [ref=e874]:
+                            - generic "CSS selector" [ref=e875]: :before, :after
+                            - text: "{"
+                          - tree [ref=e878]:
+                            - 'treeitem "CSS property name: --tw-content : CSS property value: \"\";" [ref=e879]':
+                              - text: "--tw-content"
+                              - generic [ref=e880]: ":"
+                              - 'generic "CSS property value: \"\"" [ref=e881]': "\"\""
+                              - text: ;
+                          - generic [ref=e882]: "}"
+                      - listitem "*, :before, :after, css selector" [ref=e883]:
+                        - link "index-BQUilJub.css:1" [ref=e885] [cursor=pointer]
+                        - generic [ref=e886]:
+                          - generic [ref=e888]:
+                            - generic "CSS selector" [ref=e889]: "*, :before, :after"
+                            - text: "{"
+                          - tree [ref=e892]:
+                            - 'treeitem "CSS property name: box-sizing : CSS property value: border-box;" [ref=e893]':
+                              - text: box-sizing
+                              - generic [ref=e894]: ":"
+                              - text: border-box;
+                            - 'treeitem "CSS property name: border-width : CSS property value: 0;" [ref=e895]':
+                              - text: border-width
+                              - generic [ref=e896]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: border-style : CSS property value: solid;" [ref=e898]':
+                              - text: border-style
+                              - generic [ref=e899]: ":"
+                              - text: solid;
+                            - 'treeitem "CSS property name: border-color : CSS property value: #e5e7eb;" [ref=e901]':
+                              - text: border-color
+                              - generic [ref=e902]: ":"
+                              - 'generic "CSS property value: #e5e7eb" [ref=e904]':
+                                - generic [ref=e905]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e906]
+                                  - generic: "#e5e7eb"
+                              - text: ;
+                          - generic [ref=e908]: "}"
+                      - listitem "*, :before, :after, css selector" [ref=e909]:
+                        - link "index-BQUilJub.css:1" [ref=e911] [cursor=pointer]
+                        - generic [ref=e912]:
+                          - generic [ref=e914]:
+                            - generic "CSS selector" [ref=e915]: "*, :before, :after"
+                            - text: "{"
+                          - tree [ref=e918]:
+                            - 'treeitem "CSS property name: --tw-border-spacing-x : CSS property value: 0;" [ref=e919]':
+                              - text: "--tw-border-spacing-x"
+                              - generic [ref=e920]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-border-spacing-y : CSS property value: 0;" [ref=e921]':
+                              - text: "--tw-border-spacing-y"
+                              - generic [ref=e922]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-translate-x : CSS property value: 0;" [ref=e923]':
+                              - text: "--tw-translate-x"
+                              - generic [ref=e924]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-translate-y : CSS property value: 0;" [ref=e925]':
+                              - text: "--tw-translate-y"
+                              - generic [ref=e926]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-rotate : CSS property value: 0;" [ref=e927]':
+                              - text: "--tw-rotate"
+                              - generic [ref=e928]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-skew-x : CSS property value: 0;" [ref=e929]':
+                              - text: "--tw-skew-x"
+                              - generic [ref=e930]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-skew-y : CSS property value: 0;" [ref=e931]':
+                              - text: "--tw-skew-y"
+                              - generic [ref=e932]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-scale-x : CSS property value: 1;" [ref=e933]':
+                              - text: "--tw-scale-x"
+                              - generic [ref=e934]: ":"
+                              - text: 1;
+                            - 'treeitem "CSS property name: --tw-scale-y : CSS property value: 1;" [ref=e935]':
+                              - text: "--tw-scale-y"
+                              - generic [ref=e936]: ":"
+                              - text: 1;
+                            - 'treeitem "CSS property name: --tw-pan-x : CSS property value: ;" [ref=e937]':
+                              - text: "--tw-pan-x"
+                              - generic [ref=e938]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-pan-y : CSS property value: ;" [ref=e939]':
+                              - text: "--tw-pan-y"
+                              - generic [ref=e940]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-pinch-zoom : CSS property value: ;" [ref=e941]':
+                              - text: "--tw-pinch-zoom"
+                              - generic [ref=e942]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-scroll-snap-strictness : CSS property value: proximity;" [ref=e943]':
+                              - text: "--tw-scroll-snap-strictness"
+                              - generic [ref=e944]: ":"
+                              - text: proximity;
+                            - 'treeitem "CSS property name: --tw-gradient-from-position : CSS property value: ;" [ref=e945]':
+                              - text: "--tw-gradient-from-position"
+                              - generic [ref=e946]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-gradient-via-position : CSS property value: ;" [ref=e947]':
+                              - text: "--tw-gradient-via-position"
+                              - generic [ref=e948]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-gradient-to-position : CSS property value: ;" [ref=e949]':
+                              - text: "--tw-gradient-to-position"
+                              - generic [ref=e950]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ordinal : CSS property value: ;" [ref=e951]':
+                              - text: "--tw-ordinal"
+                              - generic [ref=e952]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-slashed-zero : CSS property value: ;" [ref=e953]':
+                              - text: "--tw-slashed-zero"
+                              - generic [ref=e954]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-numeric-figure : CSS property value: ;" [ref=e955]':
+                              - text: "--tw-numeric-figure"
+                              - generic [ref=e956]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-numeric-spacing : CSS property value: ;" [ref=e957]':
+                              - text: "--tw-numeric-spacing"
+                              - generic [ref=e958]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-numeric-fraction : CSS property value: ;" [ref=e959]':
+                              - text: "--tw-numeric-fraction"
+                              - generic [ref=e960]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-inset : CSS property value: ;" [ref=e961]':
+                              - text: "--tw-ring-inset"
+                              - generic [ref=e962]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-offset-width : CSS property value: 0px;" [ref=e963]':
+                              - text: "--tw-ring-offset-width"
+                              - generic [ref=e964]: ":"
+                              - text: 0px;
+                            - 'treeitem "CSS property name: --tw-ring-offset-color : CSS property value: #fff;" [ref=e965]':
+                              - text: "--tw-ring-offset-color"
+                              - generic [ref=e966]: ":"
+                              - 'generic "CSS property value: #fff" [ref=e967]':
+                                - generic [ref=e968]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e969]
+                                  - generic: "#fff"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-color : CSS property value: rgb(59 130 246 / .5);" [ref=e971]':
+                              - text: "--tw-ring-color"
+                              - generic [ref=e972]: ":"
+                              - 'generic "CSS property value: rgb(59 130 246 / .5)" [ref=e973]':
+                                - generic [ref=e974]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e975]
+                                  - generic: rgb(59 130 246 / .5)
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-offset-shadow : CSS property value: 0 0 #0000;" [ref=e977]':
+                              - text: "--tw-ring-offset-shadow"
+                              - generic [ref=e978]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e979]':
+                                - text: 0 0
+                                - generic [ref=e980]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e981]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-shadow : CSS property value: 0 0 #0000;" [ref=e983]':
+                              - text: "--tw-ring-shadow"
+                              - generic [ref=e984]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e985]':
+                                - text: 0 0
+                                - generic [ref=e986]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e987]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-shadow : CSS property value: 0 0 #0000;" [ref=e989]':
+                              - text: "--tw-shadow"
+                              - generic [ref=e990]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e991]':
+                                - text: 0 0
+                                - generic [ref=e992]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e993]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-shadow-colored : CSS property value: 0 0 #0000;" [ref=e995]':
+                              - text: "--tw-shadow-colored"
+                              - generic [ref=e996]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e997]':
+                                - text: 0 0
+                                - generic [ref=e998]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e999]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-blur : CSS property value: ;" [ref=e1001]':
+                              - text: "--tw-blur"
+                              - generic [ref=e1002]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-brightness : CSS property value: ;" [ref=e1003]':
+                              - text: "--tw-brightness"
+                              - generic [ref=e1004]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contrast : CSS property value: ;" [ref=e1005]':
+                              - text: "--tw-contrast"
+                              - generic [ref=e1006]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-grayscale : CSS property value: ;" [ref=e1007]':
+                              - text: "--tw-grayscale"
+                              - generic [ref=e1008]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-hue-rotate : CSS property value: ;" [ref=e1009]':
+                              - text: "--tw-hue-rotate"
+                              - generic [ref=e1010]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-invert : CSS property value: ;" [ref=e1011]':
+                              - text: "--tw-invert"
+                              - generic [ref=e1012]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-saturate : CSS property value: ;" [ref=e1013]':
+                              - text: "--tw-saturate"
+                              - generic [ref=e1014]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-sepia : CSS property value: ;" [ref=e1015]':
+                              - text: "--tw-sepia"
+                              - generic [ref=e1016]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-drop-shadow : CSS property value: ;" [ref=e1017]':
+                              - text: "--tw-drop-shadow"
+                              - generic [ref=e1018]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-blur : CSS property value: ;" [ref=e1019]':
+                              - text: "--tw-backdrop-blur"
+                              - generic [ref=e1020]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-brightness : CSS property value: ;" [ref=e1021]':
+                              - text: "--tw-backdrop-brightness"
+                              - generic [ref=e1022]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-contrast : CSS property value: ;" [ref=e1023]':
+                              - text: "--tw-backdrop-contrast"
+                              - generic [ref=e1024]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-grayscale : CSS property value: ;" [ref=e1025]':
+                              - text: "--tw-backdrop-grayscale"
+                              - generic [ref=e1026]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-hue-rotate : CSS property value: ;" [ref=e1027]':
+                              - text: "--tw-backdrop-hue-rotate"
+                              - generic [ref=e1028]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-invert : CSS property value: ;" [ref=e1029]':
+                              - text: "--tw-backdrop-invert"
+                              - generic [ref=e1030]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-opacity : CSS property value: ;" [ref=e1031]':
+                              - text: "--tw-backdrop-opacity"
+                              - generic [ref=e1032]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-saturate : CSS property value: ;" [ref=e1033]':
+                              - text: "--tw-backdrop-saturate"
+                              - generic [ref=e1034]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-sepia : CSS property value: ;" [ref=e1035]':
+                              - text: "--tw-backdrop-sepia"
+                              - generic [ref=e1036]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contain-size : CSS property value: ;" [ref=e1037]':
+                              - text: "--tw-contain-size"
+                              - generic [ref=e1038]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contain-layout : CSS property value: ;" [ref=e1039]':
+                              - text: "--tw-contain-layout"
+                              - generic [ref=e1040]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contain-paint : CSS property value: ;" [ref=e1041]':
+                              - text: "--tw-contain-paint"
+                              - generic [ref=e1042]: ":"
+                              - text: ;
+                          - button "Show all properties (1 more)" [ref=e1043]:
+                            - generic: Show all properties (1 more)
+                          - generic [ref=e1044]: "}"
+                      - generic [ref=e1045]: Pseudo ::after element
+                      - listitem ":before, :after, css selector" [ref=e1046]:
+                        - link "index-BQUilJub.css:1" [ref=e1048] [cursor=pointer]
+                        - generic [ref=e1049]:
+                          - generic [ref=e1051]:
+                            - generic "CSS selector" [ref=e1052]: :before, :after
+                            - text: "{"
+                          - tree [ref=e1055]:
+                            - 'treeitem "CSS property name: --tw-content : CSS property value: \"\";" [ref=e1056]':
+                              - text: "--tw-content"
+                              - generic [ref=e1057]: ":"
+                              - 'generic "CSS property value: \"\"" [ref=e1058]': "\"\""
+                              - text: ;
+                          - generic [ref=e1059]: "}"
+                      - listitem "*, :before, :after, css selector" [ref=e1060]:
+                        - link "index-BQUilJub.css:1" [ref=e1062] [cursor=pointer]
+                        - generic [ref=e1063]:
+                          - generic [ref=e1065]:
+                            - generic "CSS selector" [ref=e1066]: "*, :before, :after"
+                            - text: "{"
+                          - tree [ref=e1069]:
+                            - 'treeitem "CSS property name: box-sizing : CSS property value: border-box;" [ref=e1070]':
+                              - text: box-sizing
+                              - generic [ref=e1071]: ":"
+                              - text: border-box;
+                            - 'treeitem "CSS property name: border-width : CSS property value: 0;" [ref=e1072]':
+                              - text: border-width
+                              - generic [ref=e1073]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: border-style : CSS property value: solid;" [ref=e1075]':
+                              - text: border-style
+                              - generic [ref=e1076]: ":"
+                              - text: solid;
+                            - 'treeitem "CSS property name: border-color : CSS property value: #e5e7eb;" [ref=e1078]':
+                              - text: border-color
+                              - generic [ref=e1079]: ":"
+                              - 'generic "CSS property value: #e5e7eb" [ref=e1081]':
+                                - generic [ref=e1082]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1083]
+                                  - generic: "#e5e7eb"
+                              - text: ;
+                          - generic [ref=e1085]: "}"
+                      - listitem "*, :before, :after, css selector" [ref=e1086]:
+                        - link "index-BQUilJub.css:1" [ref=e1088] [cursor=pointer]
+                        - generic [ref=e1089]:
+                          - generic [ref=e1091]:
+                            - generic "CSS selector" [ref=e1092]: "*, :before, :after"
+                            - text: "{"
+                          - tree [ref=e1095]:
+                            - 'treeitem "CSS property name: --tw-border-spacing-x : CSS property value: 0;" [ref=e1096]':
+                              - text: "--tw-border-spacing-x"
+                              - generic [ref=e1097]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-border-spacing-y : CSS property value: 0;" [ref=e1098]':
+                              - text: "--tw-border-spacing-y"
+                              - generic [ref=e1099]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-translate-x : CSS property value: 0;" [ref=e1100]':
+                              - text: "--tw-translate-x"
+                              - generic [ref=e1101]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-translate-y : CSS property value: 0;" [ref=e1102]':
+                              - text: "--tw-translate-y"
+                              - generic [ref=e1103]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-rotate : CSS property value: 0;" [ref=e1104]':
+                              - text: "--tw-rotate"
+                              - generic [ref=e1105]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-skew-x : CSS property value: 0;" [ref=e1106]':
+                              - text: "--tw-skew-x"
+                              - generic [ref=e1107]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-skew-y : CSS property value: 0;" [ref=e1108]':
+                              - text: "--tw-skew-y"
+                              - generic [ref=e1109]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-scale-x : CSS property value: 1;" [ref=e1110]':
+                              - text: "--tw-scale-x"
+                              - generic [ref=e1111]: ":"
+                              - text: 1;
+                            - 'treeitem "CSS property name: --tw-scale-y : CSS property value: 1;" [ref=e1112]':
+                              - text: "--tw-scale-y"
+                              - generic [ref=e1113]: ":"
+                              - text: 1;
+                            - 'treeitem "CSS property name: --tw-pan-x : CSS property value: ;" [ref=e1114]':
+                              - text: "--tw-pan-x"
+                              - generic [ref=e1115]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-pan-y : CSS property value: ;" [ref=e1116]':
+                              - text: "--tw-pan-y"
+                              - generic [ref=e1117]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-pinch-zoom : CSS property value: ;" [ref=e1118]':
+                              - text: "--tw-pinch-zoom"
+                              - generic [ref=e1119]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-scroll-snap-strictness : CSS property value: proximity;" [ref=e1120]':
+                              - text: "--tw-scroll-snap-strictness"
+                              - generic [ref=e1121]: ":"
+                              - text: proximity;
+                            - 'treeitem "CSS property name: --tw-gradient-from-position : CSS property value: ;" [ref=e1122]':
+                              - text: "--tw-gradient-from-position"
+                              - generic [ref=e1123]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-gradient-via-position : CSS property value: ;" [ref=e1124]':
+                              - text: "--tw-gradient-via-position"
+                              - generic [ref=e1125]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-gradient-to-position : CSS property value: ;" [ref=e1126]':
+                              - text: "--tw-gradient-to-position"
+                              - generic [ref=e1127]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ordinal : CSS property value: ;" [ref=e1128]':
+                              - text: "--tw-ordinal"
+                              - generic [ref=e1129]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-slashed-zero : CSS property value: ;" [ref=e1130]':
+                              - text: "--tw-slashed-zero"
+                              - generic [ref=e1131]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-numeric-figure : CSS property value: ;" [ref=e1132]':
+                              - text: "--tw-numeric-figure"
+                              - generic [ref=e1133]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-numeric-spacing : CSS property value: ;" [ref=e1134]':
+                              - text: "--tw-numeric-spacing"
+                              - generic [ref=e1135]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-numeric-fraction : CSS property value: ;" [ref=e1136]':
+                              - text: "--tw-numeric-fraction"
+                              - generic [ref=e1137]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-inset : CSS property value: ;" [ref=e1138]':
+                              - text: "--tw-ring-inset"
+                              - generic [ref=e1139]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-offset-width : CSS property value: 0px;" [ref=e1140]':
+                              - text: "--tw-ring-offset-width"
+                              - generic [ref=e1141]: ":"
+                              - text: 0px;
+                            - 'treeitem "CSS property name: --tw-ring-offset-color : CSS property value: #fff;" [ref=e1142]':
+                              - text: "--tw-ring-offset-color"
+                              - generic [ref=e1143]: ":"
+                              - 'generic "CSS property value: #fff" [ref=e1144]':
+                                - generic [ref=e1145]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1146]
+                                  - generic: "#fff"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-color : CSS property value: rgb(59 130 246 / .5);" [ref=e1148]':
+                              - text: "--tw-ring-color"
+                              - generic [ref=e1149]: ":"
+                              - 'generic "CSS property value: rgb(59 130 246 / .5)" [ref=e1150]':
+                                - generic [ref=e1151]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1152]
+                                  - generic: rgb(59 130 246 / .5)
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-offset-shadow : CSS property value: 0 0 #0000;" [ref=e1154]':
+                              - text: "--tw-ring-offset-shadow"
+                              - generic [ref=e1155]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e1156]':
+                                - text: 0 0
+                                - generic [ref=e1157]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1158]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-shadow : CSS property value: 0 0 #0000;" [ref=e1160]':
+                              - text: "--tw-ring-shadow"
+                              - generic [ref=e1161]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e1162]':
+                                - text: 0 0
+                                - generic [ref=e1163]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1164]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-shadow : CSS property value: 0 0 #0000;" [ref=e1166]':
+                              - text: "--tw-shadow"
+                              - generic [ref=e1167]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e1168]':
+                                - text: 0 0
+                                - generic [ref=e1169]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1170]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-shadow-colored : CSS property value: 0 0 #0000;" [ref=e1172]':
+                              - text: "--tw-shadow-colored"
+                              - generic [ref=e1173]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e1174]':
+                                - text: 0 0
+                                - generic [ref=e1175]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1176]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-blur : CSS property value: ;" [ref=e1178]':
+                              - text: "--tw-blur"
+                              - generic [ref=e1179]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-brightness : CSS property value: ;" [ref=e1180]':
+                              - text: "--tw-brightness"
+                              - generic [ref=e1181]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contrast : CSS property value: ;" [ref=e1182]':
+                              - text: "--tw-contrast"
+                              - generic [ref=e1183]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-grayscale : CSS property value: ;" [ref=e1184]':
+                              - text: "--tw-grayscale"
+                              - generic [ref=e1185]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-hue-rotate : CSS property value: ;" [ref=e1186]':
+                              - text: "--tw-hue-rotate"
+                              - generic [ref=e1187]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-invert : CSS property value: ;" [ref=e1188]':
+                              - text: "--tw-invert"
+                              - generic [ref=e1189]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-saturate : CSS property value: ;" [ref=e1190]':
+                              - text: "--tw-saturate"
+                              - generic [ref=e1191]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-sepia : CSS property value: ;" [ref=e1192]':
+                              - text: "--tw-sepia"
+                              - generic [ref=e1193]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-drop-shadow : CSS property value: ;" [ref=e1194]':
+                              - text: "--tw-drop-shadow"
+                              - generic [ref=e1195]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-blur : CSS property value: ;" [ref=e1196]':
+                              - text: "--tw-backdrop-blur"
+                              - generic [ref=e1197]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-brightness : CSS property value: ;" [ref=e1198]':
+                              - text: "--tw-backdrop-brightness"
+                              - generic [ref=e1199]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-contrast : CSS property value: ;" [ref=e1200]':
+                              - text: "--tw-backdrop-contrast"
+                              - generic [ref=e1201]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-grayscale : CSS property value: ;" [ref=e1202]':
+                              - text: "--tw-backdrop-grayscale"
+                              - generic [ref=e1203]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-hue-rotate : CSS property value: ;" [ref=e1204]':
+                              - text: "--tw-backdrop-hue-rotate"
+                              - generic [ref=e1205]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-invert : CSS property value: ;" [ref=e1206]':
+                              - text: "--tw-backdrop-invert"
+                              - generic [ref=e1207]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-opacity : CSS property value: ;" [ref=e1208]':
+                              - text: "--tw-backdrop-opacity"
+                              - generic [ref=e1209]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-saturate : CSS property value: ;" [ref=e1210]':
+                              - text: "--tw-backdrop-saturate"
+                              - generic [ref=e1211]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-sepia : CSS property value: ;" [ref=e1212]':
+                              - text: "--tw-backdrop-sepia"
+                              - generic [ref=e1213]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contain-size : CSS property value: ;" [ref=e1214]':
+                              - text: "--tw-contain-size"
+                              - generic [ref=e1215]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contain-layout : CSS property value: ;" [ref=e1216]':
+                              - text: "--tw-contain-layout"
+                              - generic [ref=e1217]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contain-paint : CSS property value: ;" [ref=e1218]':
+                              - text: "--tw-contain-paint"
+                              - generic [ref=e1219]: ":"
+                              - text: ;
+                          - button "Show all properties (1 more)" [ref=e1220]:
+                            - generic: Show all properties (1 more)
+                          - generic [ref=e1221]: "}"
+                      - generic [ref=e1222]: Pseudo ::backdrop element
+                      - listitem "::backdrop, css selector" [ref=e1223]:
+                        - link "index-BQUilJub.css:1" [ref=e1225] [cursor=pointer]
+                        - generic [ref=e1226]:
+                          - generic [ref=e1228]:
+                            - generic "CSS selector" [ref=e1229]: ::backdrop
+                            - text: "{"
+                          - tree [ref=e1232]:
+                            - 'treeitem "CSS property name: --tw-border-spacing-x : CSS property value: 0;" [ref=e1233]':
+                              - text: "--tw-border-spacing-x"
+                              - generic [ref=e1234]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-border-spacing-y : CSS property value: 0;" [ref=e1235]':
+                              - text: "--tw-border-spacing-y"
+                              - generic [ref=e1236]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-translate-x : CSS property value: 0;" [ref=e1237]':
+                              - text: "--tw-translate-x"
+                              - generic [ref=e1238]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-translate-y : CSS property value: 0;" [ref=e1239]':
+                              - text: "--tw-translate-y"
+                              - generic [ref=e1240]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-rotate : CSS property value: 0;" [ref=e1241]':
+                              - text: "--tw-rotate"
+                              - generic [ref=e1242]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-skew-x : CSS property value: 0;" [ref=e1243]':
+                              - text: "--tw-skew-x"
+                              - generic [ref=e1244]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-skew-y : CSS property value: 0;" [ref=e1245]':
+                              - text: "--tw-skew-y"
+                              - generic [ref=e1246]: ":"
+                              - text: 0;
+                            - 'treeitem "CSS property name: --tw-scale-x : CSS property value: 1;" [ref=e1247]':
+                              - text: "--tw-scale-x"
+                              - generic [ref=e1248]: ":"
+                              - text: 1;
+                            - 'treeitem "CSS property name: --tw-scale-y : CSS property value: 1;" [ref=e1249]':
+                              - text: "--tw-scale-y"
+                              - generic [ref=e1250]: ":"
+                              - text: 1;
+                            - 'treeitem "CSS property name: --tw-pan-x : CSS property value: ;" [ref=e1251]':
+                              - text: "--tw-pan-x"
+                              - generic [ref=e1252]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-pan-y : CSS property value: ;" [ref=e1253]':
+                              - text: "--tw-pan-y"
+                              - generic [ref=e1254]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-pinch-zoom : CSS property value: ;" [ref=e1255]':
+                              - text: "--tw-pinch-zoom"
+                              - generic [ref=e1256]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-scroll-snap-strictness : CSS property value: proximity;" [ref=e1257]':
+                              - text: "--tw-scroll-snap-strictness"
+                              - generic [ref=e1258]: ":"
+                              - text: proximity;
+                            - 'treeitem "CSS property name: --tw-gradient-from-position : CSS property value: ;" [ref=e1259]':
+                              - text: "--tw-gradient-from-position"
+                              - generic [ref=e1260]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-gradient-via-position : CSS property value: ;" [ref=e1261]':
+                              - text: "--tw-gradient-via-position"
+                              - generic [ref=e1262]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-gradient-to-position : CSS property value: ;" [ref=e1263]':
+                              - text: "--tw-gradient-to-position"
+                              - generic [ref=e1264]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ordinal : CSS property value: ;" [ref=e1265]':
+                              - text: "--tw-ordinal"
+                              - generic [ref=e1266]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-slashed-zero : CSS property value: ;" [ref=e1267]':
+                              - text: "--tw-slashed-zero"
+                              - generic [ref=e1268]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-numeric-figure : CSS property value: ;" [ref=e1269]':
+                              - text: "--tw-numeric-figure"
+                              - generic [ref=e1270]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-numeric-spacing : CSS property value: ;" [ref=e1271]':
+                              - text: "--tw-numeric-spacing"
+                              - generic [ref=e1272]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-numeric-fraction : CSS property value: ;" [ref=e1273]':
+                              - text: "--tw-numeric-fraction"
+                              - generic [ref=e1274]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-inset : CSS property value: ;" [ref=e1275]':
+                              - text: "--tw-ring-inset"
+                              - generic [ref=e1276]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-offset-width : CSS property value: 0px;" [ref=e1277]':
+                              - text: "--tw-ring-offset-width"
+                              - generic [ref=e1278]: ":"
+                              - text: 0px;
+                            - 'treeitem "CSS property name: --tw-ring-offset-color : CSS property value: #fff;" [ref=e1279]':
+                              - text: "--tw-ring-offset-color"
+                              - generic [ref=e1280]: ":"
+                              - 'generic "CSS property value: #fff" [ref=e1281]':
+                                - generic [ref=e1282]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1283]
+                                  - generic: "#fff"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-color : CSS property value: rgb(59 130 246 / .5);" [ref=e1285]':
+                              - text: "--tw-ring-color"
+                              - generic [ref=e1286]: ":"
+                              - 'generic "CSS property value: rgb(59 130 246 / .5)" [ref=e1287]':
+                                - generic [ref=e1288]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1289]
+                                  - generic: rgb(59 130 246 / .5)
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-offset-shadow : CSS property value: 0 0 #0000;" [ref=e1291]':
+                              - text: "--tw-ring-offset-shadow"
+                              - generic [ref=e1292]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e1293]':
+                                - text: 0 0
+                                - generic [ref=e1294]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1295]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-ring-shadow : CSS property value: 0 0 #0000;" [ref=e1297]':
+                              - text: "--tw-ring-shadow"
+                              - generic [ref=e1298]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e1299]':
+                                - text: 0 0
+                                - generic [ref=e1300]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1301]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-shadow : CSS property value: 0 0 #0000;" [ref=e1303]':
+                              - text: "--tw-shadow"
+                              - generic [ref=e1304]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e1305]':
+                                - text: 0 0
+                                - generic [ref=e1306]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1307]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-shadow-colored : CSS property value: 0 0 #0000;" [ref=e1309]':
+                              - text: "--tw-shadow-colored"
+                              - generic [ref=e1310]: ":"
+                              - 'generic "CSS property value: 0 0 #0000" [ref=e1311]':
+                                - text: 0 0
+                                - generic [ref=e1312]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1313]
+                                  - generic: "#0000"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-blur : CSS property value: ;" [ref=e1315]':
+                              - text: "--tw-blur"
+                              - generic [ref=e1316]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-brightness : CSS property value: ;" [ref=e1317]':
+                              - text: "--tw-brightness"
+                              - generic [ref=e1318]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contrast : CSS property value: ;" [ref=e1319]':
+                              - text: "--tw-contrast"
+                              - generic [ref=e1320]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-grayscale : CSS property value: ;" [ref=e1321]':
+                              - text: "--tw-grayscale"
+                              - generic [ref=e1322]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-hue-rotate : CSS property value: ;" [ref=e1323]':
+                              - text: "--tw-hue-rotate"
+                              - generic [ref=e1324]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-invert : CSS property value: ;" [ref=e1325]':
+                              - text: "--tw-invert"
+                              - generic [ref=e1326]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-saturate : CSS property value: ;" [ref=e1327]':
+                              - text: "--tw-saturate"
+                              - generic [ref=e1328]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-sepia : CSS property value: ;" [ref=e1329]':
+                              - text: "--tw-sepia"
+                              - generic [ref=e1330]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-drop-shadow : CSS property value: ;" [ref=e1331]':
+                              - text: "--tw-drop-shadow"
+                              - generic [ref=e1332]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-blur : CSS property value: ;" [ref=e1333]':
+                              - text: "--tw-backdrop-blur"
+                              - generic [ref=e1334]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-brightness : CSS property value: ;" [ref=e1335]':
+                              - text: "--tw-backdrop-brightness"
+                              - generic [ref=e1336]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-contrast : CSS property value: ;" [ref=e1337]':
+                              - text: "--tw-backdrop-contrast"
+                              - generic [ref=e1338]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-grayscale : CSS property value: ;" [ref=e1339]':
+                              - text: "--tw-backdrop-grayscale"
+                              - generic [ref=e1340]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-hue-rotate : CSS property value: ;" [ref=e1341]':
+                              - text: "--tw-backdrop-hue-rotate"
+                              - generic [ref=e1342]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-invert : CSS property value: ;" [ref=e1343]':
+                              - text: "--tw-backdrop-invert"
+                              - generic [ref=e1344]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-opacity : CSS property value: ;" [ref=e1345]':
+                              - text: "--tw-backdrop-opacity"
+                              - generic [ref=e1346]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-saturate : CSS property value: ;" [ref=e1347]':
+                              - text: "--tw-backdrop-saturate"
+                              - generic [ref=e1348]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-backdrop-sepia : CSS property value: ;" [ref=e1349]':
+                              - text: "--tw-backdrop-sepia"
+                              - generic [ref=e1350]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contain-size : CSS property value: ;" [ref=e1351]':
+                              - text: "--tw-contain-size"
+                              - generic [ref=e1352]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contain-layout : CSS property value: ;" [ref=e1353]':
+                              - text: "--tw-contain-layout"
+                              - generic [ref=e1354]: ":"
+                              - text: ;
+                            - 'treeitem "CSS property name: --tw-contain-paint : CSS property value: ;" [ref=e1355]':
+                              - text: "--tw-contain-paint"
+                              - generic [ref=e1356]: ":"
+                              - text: ;
+                          - button "Show all properties (1 more)" [ref=e1357]:
+                            - generic: Show all properties (1 more)
+                          - generic [ref=e1358]: "}"
+                      - generic [ref=e1359]: Pseudo ::scrollbar element
+                      - listitem "::-webkit-scrollbar, css selector" [ref=e1360]:
+                        - link "index-BQUilJub.css:1" [ref=e1362] [cursor=pointer]
+                        - generic [ref=e1363]:
+                          - generic [ref=e1365]:
+                            - generic "CSS selector" [ref=e1366]: ::-webkit-scrollbar
+                            - text: "{"
+                          - tree [ref=e1369]:
+                            - 'treeitem "CSS property name: width : CSS property value: 10px;" [ref=e1370]':
+                              - text: width
+                              - generic [ref=e1371]: ":"
+                              - text: 10px;
+                            - 'treeitem "CSS property name: height : CSS property value: 10px;" [ref=e1372]':
+                              - text: height
+                              - generic [ref=e1373]: ":"
+                              - text: 10px;
+                          - generic [ref=e1374]: "}"
+                      - generic [ref=e1375]: Pseudo ::scrollbar-thumb element
+                      - listitem "::-webkit-scrollbar-thumb, css selector" [ref=e1376]:
+                        - link "index-BQUilJub.css:1" [ref=e1378] [cursor=pointer]
+                        - generic [ref=e1379]:
+                          - generic [ref=e1381]:
+                            - generic "CSS selector" [ref=e1382]: ::-webkit-scrollbar-thumb
+                            - text: "{"
+                          - tree [ref=e1385]:
+                            - 'treeitem "CSS property name: background : CSS property value: #0003;" [ref=e1386]':
+                              - text: background
+                              - generic [ref=e1387]: ":"
+                              - 'generic "CSS property value: #0003" [ref=e1389]':
+                                - generic [ref=e1390]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1391]
+                                  - generic: "#0003"
+                              - text: ;
+                            - 'treeitem "CSS property name: border-radius : CSS property value: 5px;" [ref=e1393]':
+                              - text: border-radius
+                              - generic [ref=e1394]: ":"
+                              - text: 5px;
+                            - 'treeitem "CSS property name: border : CSS property value: 2px solid transparent;" [ref=e1396]':
+                              - text: border
+                              - generic [ref=e1397]: ":"
+                              - 'generic "CSS property value: 2px solid transparent" [ref=e1399]':
+                                - text: 2px solid
+                                - generic [ref=e1400]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1401]
+                                  - generic: transparent
+                              - text: ;
+                            - 'treeitem "CSS property name: background-clip : CSS property value: padding-box;" [ref=e1403]':
+                              - text: background-clip
+                              - generic [ref=e1404]: ":"
+                              - text: padding-box;
+                          - generic [ref=e1405]: "}"
+                      - generic [ref=e1406]: Pseudo ::scrollbar-track element
+                      - listitem "::-webkit-scrollbar-track, css selector" [ref=e1407]:
+                        - link "index-BQUilJub.css:1" [ref=e1409] [cursor=pointer]
+                        - generic [ref=e1410]:
+                          - generic [ref=e1412]:
+                            - generic "CSS selector" [ref=e1413]: ::-webkit-scrollbar-track
+                            - text: "{"
+                          - tree [ref=e1416]:
+                            - 'treeitem "CSS property name: background : CSS property value: transparent;" [ref=e1417]':
+                              - text: background
+                              - generic [ref=e1418]: ":"
+                              - 'generic "CSS property value: transparent" [ref=e1420]':
+                                - generic [ref=e1421]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1422]
+                                  - generic: transparent
+                              - text: ;
+                          - generic [ref=e1424]: "}"
+                      - generic [ref=e1425]: Pseudo ::selection element
+                      - listitem "::selection, css selector" [ref=e1426]:
+                        - link "index-BQUilJub.css:1" [ref=e1428] [cursor=pointer]
+                        - generic [ref=e1429]:
+                          - generic [ref=e1431]:
+                            - generic "CSS selector" [ref=e1432]: ::selection
+                            - text: "{"
+                          - tree [ref=e1435]:
+                            - 'treeitem "CSS property name: background-color : CSS property value: #3b82f6;" [ref=e1436]':
+                              - text: background-color
+                              - generic [ref=e1437]: ":"
+                              - 'generic "CSS property value: #3b82f6" [ref=e1438]':
+                                - generic [ref=e1439]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1440]
+                                  - generic: "#3b82f6"
+                              - text: ;
+                            - 'treeitem "CSS property name: color : CSS property value: #fff;" [ref=e1442]':
+                              - text: color
+                              - generic [ref=e1443]: ":"
+                              - 'generic "CSS property value: #fff" [ref=e1444]':
+                                - generic [ref=e1445]:
+                                  - generic "Open color picker. Shift + Click to change color format." [ref=e1446]
+                                  - generic: "#fff"
+                              - text: ;
+                          - generic [ref=e1448]: "}"
+                  - generic [ref=e1452]:
+                    - generic [ref=e1453]: margin
+                    - generic [ref=e1454]: ‒
+                    - generic [ref=e1455]: ‒
+                    - generic [ref=e1456]:
+                      - generic [ref=e1457]: border
+                      - generic [ref=e1458]: ‒
+                      - generic [ref=e1459]: ‒
+                      - generic [ref=e1460]:
+                        - generic [ref=e1461]: padding
+                        - generic [ref=e1462]: ‒
+                        - generic [ref=e1463]: ‒
+                        - generic [ref=e1464]:
+                          - generic [ref=e1465]: "629"
+                          - generic [ref=e1466]: ×
+                          - generic [ref=e1467]: "735"
+                        - generic [ref=e1468]: ‒
+                        - generic [ref=e1469]: ‒
+                      - generic [ref=e1470]: ‒
+                      - generic [ref=e1471]: ‒
+                    - generic [ref=e1472]: ‒
+                    - generic [ref=e1473]: ‒
+  - alert [ref=e1476]: DevTools is docked to right
+  - alert
+```
