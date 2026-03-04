@@ -31,7 +31,13 @@ const createWindow = () => {
     mainWindow.loadURL('http://localhost:5173');
     mainWindow.webContents.openDevTools();
   } else {
-    mainWindow.loadFile(path.join(__dirname, '../renderer/index.html'));
+    // In production, the path is relative to the app.asar file
+    const rendererPath = app.isPackaged
+      ? path.join(process.resourcesPath, 'app.asar', 'dist', 'renderer', 'index.html')
+      : path.join(__dirname, '../renderer/index.html');
+    mainWindow.loadFile(rendererPath);
+    // Open DevTools to see any errors
+    mainWindow.webContents.openDevTools();
   }
 
   mainWindow.on('closed', () => {
