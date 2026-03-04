@@ -2,11 +2,12 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "module": "commonjs",
+    "outDir": "dist",
+    "noEmit": false,
     "moduleResolution": "node",
     "allowImportingTsExtensions": false,
     "esModuleInterop": true,
-    "outDir": "dist",
-    "noEmit": false,
+    "skipLibCheck": true,
     "lib": ["ES2020"],
     "types": ["node"]
   },

@@ -18,7 +18,7 @@ import { CommandPalette } from './CommandPalette';
 import { StatusBar } from './StatusBar';
 import { KeyboardShortcutsHelp } from './KeyboardShortcutsHelp';
 import { useKeyboardShortcuts, SHORTCUTS } from '../hooks/useKeyboardShortcuts';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 export const Root = () => {
   const { isAuthenticated, currentPath, navigate, logout, leftHandMode, setLeftHandMode } = useApp();
