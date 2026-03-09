@@ -1,34 +1,31 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { describe, test, expect } from '@jest/globals';
-import { BrowserRouter } from 'react-router-dom';
 import { AppProvider } from '@/context/AppContext';
-import Calendar from '@/pages/Calendar';
+import { Calendar } from '@/components/Calendar';
 
 describe('Calendar Page Tests', () => {
   const renderCalendar = () => {
     return render(
-      <BrowserRouter>
-        <AppProvider>
-          <Calendar />
-        </AppProvider>
-      </BrowserRouter>
+      <AppProvider>
+        <Calendar />
+      </AppProvider>
     );
   };
 
   test('Calendar page renders', () => {
     renderCalendar();
     
-    expect(screen.getByText(/calendar|appointments/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /calendar\s*&\s*appointments/i })).toBeInTheDocument();
   });
 
   test('Calendar displays current month', () => {
     renderCalendar();
     
     const currentMonth = new Date().toLocaleString('default', { month: 'long' });
-    const monthElement = screen.queryByText(new RegExp(currentMonth, 'i'));
+    const monthElements = screen.getAllByText(new RegExp(currentMonth, 'i'));
     
     // Month should be displayed somewhere on the page
-    expect(monthElement || document.body).toBeInTheDocument();
+    expect(monthElements.length).toBeGreaterThan(0);
   });
 
   test('Navigation buttons are present', () => {
@@ -51,11 +48,9 @@ describe('Calendar Page Tests', () => {
 describe('Calendar Interaction Tests', () => {
   const renderCalendar = () => {
     return render(
-      <BrowserRouter>
-        <AppProvider>
-          <Calendar />
-        </AppProvider>
-      </BrowserRouter>
+      <AppProvider>
+        <Calendar />
+      </AppProvider>
     );
   };
 
@@ -85,11 +80,9 @@ describe('Calendar Interaction Tests', () => {
 describe('Appointment Display Tests', () => {
   const renderCalendar = () => {
     return render(
-      <BrowserRouter>
-        <AppProvider>
-          <Calendar />
-        </AppProvider>
-      </BrowserRouter>
+      <AppProvider>
+        <Calendar />
+      </AppProvider>
     );
   };
 

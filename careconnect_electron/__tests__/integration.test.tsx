@@ -2,7 +2,7 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { describe, test, expect } from '@jest/globals';
 import { BrowserRouter, MemoryRouter } from 'react-router-dom';
 import { AppProvider } from '@/context/AppContext';
-import Root from '@/components/Root';
+import { Root } from '@/components/Root';
 
 describe('Integration Tests - Complete User Flows', () => {
   test('User can navigate through main pages', async () => {
