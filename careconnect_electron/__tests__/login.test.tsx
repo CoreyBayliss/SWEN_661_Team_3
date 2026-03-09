@@ -1,17 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import { describe, test, expect } from '@jest/globals';
-import { BrowserRouter } from 'react-router-dom';
 import { AppProvider } from '@/context/AppContext';
-import Login from '@/pages/Login';
+import { Login } from '@/components/Login';
 
 describe('Login Screen Tests', () => {
   const renderLogin = () => {
     return render(
-      <BrowserRouter>
-        <AppProvider>
-          <Login />
-        </AppProvider>
-      </BrowserRouter>
+      <AppProvider>
+        <Login />
+      </AppProvider>
     );
   };
 
@@ -31,7 +28,7 @@ describe('Login Screen Tests', () => {
   test('Password field has visibility toggle', () => {
     renderLogin();
     
-    const passwordInput = screen.getByLabelText(/password/i);
+    const passwordInput = screen.getByLabelText(/password/i, { selector: 'input' });
     expect(passwordInput).toBeInTheDocument();
     expect(passwordInput).toHaveAttribute('type', 'password');
   });

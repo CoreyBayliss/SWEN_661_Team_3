@@ -1,6 +1,5 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { describe, test, expect } from '@jest/globals';
-import { BrowserRouter } from 'react-router-dom';
 import { AppProvider, useApp } from '@/context/AppContext';
 
 // Test component to access and test AppContext
@@ -11,17 +10,17 @@ const TestContextConsumer = () => {
     <div>
       <div data-testid="auth-status">{context.isAuthenticated ? 'authenticated' : 'unauthenticated'}</div>
       <div data-testid="left-hand-mode">{context.leftHandMode ? 'enabled' : 'disabled'}</div>
-      <div data-testid="dark-mode">{context.darkMode ? 'enabled' : 'disabled'}</div>
+      <div data-testid="notifications-enabled">{context.notificationsEnabled ? 'enabled' : 'disabled'}</div>
       <div data-testid="medication-count">{context.medications.length}</div>
       <div data-testid="appointment-count">{context.appointments.length}</div>
       
       <button onClick={() => context.setLeftHandMode(!context.leftHandMode)}>
         Toggle Left Hand Mode
       </button>
-      <button onClick={() => context.setDarkMode(!context.darkMode)}>
-        Toggle Dark Mode
+      <button onClick={() => context.setNotificationsEnabled(!context.notificationsEnabled)}>
+        Toggle Notifications
       </button>
-      <button onClick={() => context.login('test@example.com', 'password')}>
+      <button onClick={() => context.login()}>
         Login
       </button>
       <button onClick={context.logout}>
@@ -34,11 +33,9 @@ const TestContextConsumer = () => {
 describe('AppProvider Context Tests', () => {
   const renderWithContext = () => {
     return render(
-      <BrowserRouter>
-        <AppProvider>
-          <TestContextConsumer />
-        </AppProvider>
-      </BrowserRouter>
+      <AppProvider>
+        <TestContextConsumer />
+      </AppProvider>
     );
   };
 
@@ -97,16 +94,16 @@ describe('AppProvider Context Tests', () => {
     });
   });
 
-  test('Dark mode can be toggled', async () => {
+  test('Notifications can be toggled', async () => {
     renderWithContext();
     
-    const initialMode = screen.getByTestId('dark-mode').textContent;
+    const initialMode = screen.getByTestId('notifications-enabled').textContent;
     
-    const toggleButton = screen.getByText('Toggle Dark Mode');
+    const toggleButton = screen.getByText('Toggle Notifications');
     fireEvent.click(toggleButton);
     
     await waitFor(() => {
-      const newMode = screen.getByTestId('dark-mode').textContent;
+      const newMode = screen.getByTestId('notifications-enabled').textContent;
       expect(newMode).not.toBe(initialMode);
     });
   });
@@ -128,20 +125,22 @@ describe('AppProvider Context Tests', () => {
 
 describe('AppProvider Settings Persistence Tests', () => {
   test('Settings are saved to localStorage', async () => {
-    const { rerender } = render(
-      <BrowserRouter>
-        <AppProvider>
-          <TestContextConsumer />
-        </AppProvider>
-      </BrowserRouter>
+    const setItemSpy = jest.spyOn(Storage.prototype, 'setItem');
+
+    render(
+      <AppProvider>
+        <TestContextConsumer />
+      </AppProvider>
     );
     
     const toggleButton = screen.getByText('Toggle Left Hand Mode');
     fireEvent.click(toggleButton);
     
     await waitFor(() => {
-      expect(localStorage.setItem).toHaveBeenCalled();
+      expect(setItemSpy).toHaveBeenCalled();
     });
+
+    setItemSpy.mockRestore();
   });
 });
 

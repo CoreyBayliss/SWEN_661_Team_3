@@ -1,8 +1,7 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import { describe, test, expect, beforeEach } from '@jest/globals';
-import { BrowserRouter } from 'react-router-dom';
+import { describe, test, expect } from '@jest/globals';
 import { AppProvider, useApp } from '@/context/AppContext';
-import Medications from '@/pages/Medications';
+import { MedicationList } from '@/components/MedicationList';
 
 // Test component to access context
 const TestMedicationManager = () => {
@@ -14,14 +13,12 @@ const TestMedicationManager = () => {
       <button onClick={() => takeMedication('1', 'Test User')}>Take Medication</button>
       <button onClick={() => skipMedication('1', 'Test User')}>Skip Medication</button>
       <button onClick={() => addMedication({
-        id: '',
         name: 'New Med',
         dose: '10mg',
         frequency: 'Daily',
         times: ['08:00'],
         refillsRemaining: 3,
         pharmacy: 'Test Pharmacy',
-        history: [],
       })}>Add Medication</button>
     </div>
   );
@@ -30,11 +27,9 @@ const TestMedicationManager = () => {
 describe('Medication Management Tests', () => {
   const renderMedicationManager = () => {
     return render(
-      <BrowserRouter>
-        <AppProvider>
-          <TestMedicationManager />
-        </AppProvider>
-      </BrowserRouter>
+      <AppProvider>
+        <TestMedicationManager />
+      </AppProvider>
     );
   };
 
@@ -86,18 +81,16 @@ describe('Medication Management Tests', () => {
 describe('Medications Page Tests', () => {
   const renderMedicationsPage = () => {
     return render(
-      <BrowserRouter>
-        <AppProvider>
-          <Medications />
-        </AppProvider>
-      </BrowserRouter>
+      <AppProvider>
+        <MedicationList />
+      </AppProvider>
     );
   };
 
   test('Medications page renders', () => {
     renderMedicationsPage();
     
-    expect(screen.getByText(/medication/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /medications/i })).toBeInTheDocument();
   });
 
   test('Medication list displays items', () => {
@@ -123,11 +116,9 @@ describe('Medications Page Tests', () => {
 describe('Medication Interaction Tests', () => {
   const renderMedicationsPage = () => {
     return render(
-      <BrowserRouter>
-        <AppProvider>
-          <Medications />
-        </AppProvider>
-      </BrowserRouter>
+      <AppProvider>
+        <MedicationList />
+      </AppProvider>
     );
   };
 
@@ -143,7 +134,7 @@ describe('Medication Interaction Tests', () => {
     renderMedicationsPage();
     
     // Check for common medication information
-    const pageContent = screen.getByRole('main') || document.body;
+    const pageContent = screen.getByRole('list', { name: /medication list/i }) || document.body;
     expect(pageContent).toBeInTheDocument();
   });
 });
