@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="description" content="CareConnect - Healthcare management with left-hand accessibility" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- iOS Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/icon-128x128.png" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-72x72.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-72x72.png" />
+    
+    <title>CareConnect - Your Health, Simplified</title>
+    <style>
+      /* Prevent pull-to-refresh on mobile */
+      html, body {
+        overscroll-behavior-y: contain;
+        overflow-x: hidden;
+      }
+      
+      /* Prevent zoom on input focus */
+      input, select, textarea {
+        font-size: 16px !important;
+      }
+      
+      /* Safe area support for notched devices */
+      body {
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/main.tsx"></script>
+  </body>
+</html>
