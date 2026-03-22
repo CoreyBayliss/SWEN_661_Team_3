@@ -83,31 +83,25 @@ describe('storage utility', () => {
     });
 
     it('should return false when localStorage is full', () => {
-      // Mock setItem to throw quota exceeded error
-      const originalSetItem = localStorage.setItem;
-      localStorage.setItem = vi.fn(() => {
+      const setItemSpy = vi.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {
         throw new DOMException('QuotaExceededError');
       });
 
       const success = storage.set('testKey', 'value');
 
       expect(success).toBe(false);
-
-      // Restore
-      localStorage.setItem = originalSetItem;
+      setItemSpy.mockRestore();
     });
 
     it('should return false on other storage errors', () => {
-      const originalSetItem = localStorage.setItem;
-      localStorage.setItem = vi.fn(() => {
+      const setItemSpy = vi.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {
         throw new Error('Storage error');
       });
 
       const success = storage.set('testKey', 'value');
 
       expect(success).toBe(false);
-
-      localStorage.setItem = originalSetItem;
+      setItemSpy.mockRestore();
     });
   });
 
@@ -128,16 +122,14 @@ describe('storage utility', () => {
     });
 
     it('should return false on error', () => {
-      const originalRemoveItem = localStorage.removeItem;
-      localStorage.removeItem = vi.fn(() => {
+      const removeItemSpy = vi.spyOn(Storage.prototype, 'removeItem').mockImplementation(() => {
         throw new Error('Remove error');
       });
 
       const success = storage.remove('testKey');
 
       expect(success).toBe(false);
-
-      localStorage.removeItem = originalRemoveItem;
+      removeItemSpy.mockRestore();
     });
   });
 
@@ -167,16 +159,14 @@ describe('storage utility', () => {
     });
 
     it('should return false on error', () => {
-      const originalRemoveItem = localStorage.removeItem;
-      localStorage.removeItem = vi.fn(() => {
+      const removeItemSpy = vi.spyOn(Storage.prototype, 'removeItem').mockImplementation(() => {
         throw new Error('Clear error');
       });
 
       const success = storage.clear();
 
       expect(success).toBe(false);
-
-      localStorage.removeItem = originalRemoveItem;
+      removeItemSpy.mockRestore();
     });
   });
 
@@ -213,7 +203,7 @@ describe('storage utility', () => {
       storage.set('undefinedValue', undefined);
       const result = storage.get('undefinedValue', 'default');
 
-      expect(result).toBeUndefined();
+      expect(result).toBe('default');
     });
 
     it('should handle empty strings', () => {

@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot@1.1.2";
 import { cva, type VariantProps } from "class-variance-authority@0.7.1";
+import { Loader2 } from "lucide-react";
 
 import { cn } from "./utils";
 
@@ -38,21 +39,103 @@ function Button({
   className,
   variant,
   size,
+  leftIcon,
+  rightIcon,
+  loading,
+  fullWidth,
   asChild = false,
+  children,
+  disabled,
   ...props
-}: React.ComponentProps<"button"> &
-  VariantProps<typeof buttonVariants> & {
+}: React.ComponentProps<"button"> & {
+    variant?:
+      | VariantProps<typeof buttonVariants>["variant"]
+      | "primary"
+      | "danger";
+    size?:
+      | VariantProps<typeof buttonVariants>["size"]
+      | "md"
+      | "touch";
+    leftIcon?: React.ReactNode;
+    rightIcon?: React.ReactNode;
+    loading?: boolean;
+    fullWidth?: boolean;
     asChild?: boolean;
   }) {
   const Comp = asChild ? Slot : "button";
+  let normalizedVariant = variant;
+  if (variant === "primary") normalizedVariant = "default";
+  if (variant === "danger") normalizedVariant = "destructive";
+
+  let normalizedSize = size;
+  if (size === "md") normalizedSize = "default";
+  if (size === "touch") normalizedSize = "lg";
+
+  const legacyVariantClass =
+    variant === "secondary"
+      ? "bg-[var(--color-secondary)]"
+      : variant === "outline"
+        ? "border-2"
+        : variant === "ghost"
+          ? "text-[var(--color-primary)]"
+          : variant === "danger" || variant === "destructive"
+            ? "bg-[var(--color-error)]"
+            : "bg-[var(--color-primary)]";
+
+  const legacySizeClass =
+    size === "sm"
+      ? "px-3 py-1.5 text-sm"
+      : size === "lg"
+        ? "px-6 py-3 text-lg"
+        : size === "touch"
+          ? "px-6 py-3 text-lg min-h-[56px]"
+          : "px-4 py-2 text-base";
 
   return (
     <Comp
       data-slot="button"
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={cn(
+        buttonVariants({
+          variant: normalizedVariant as VariantProps<typeof buttonVariants>["variant"],
+          size: normalizedSize as VariantProps<typeof buttonVariants>["size"],
+          className,
+        }),
+        legacyVariantClass,
+        legacySizeClass,
+        "focus-visible:ring-2 focus-visible:ring-offset-2",
+        fullWidth && "w-full",
+      )}
+      disabled={disabled || loading}
       {...props}
-    />
+    >
+      {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : leftIcon}
+      {children}
+      {!loading && rightIcon}
+    </Comp>
   );
 }
 
-export { Button, buttonVariants };
+function IconButton({
+  icon,
+  label,
+  className,
+  ...props
+}: Omit<React.ComponentProps<typeof Button>, "children"> & {
+  icon: React.ReactNode;
+  label: string;
+}) {
+  return (
+    <Button
+      type="button"
+      size="icon"
+      aria-label={label}
+      title={label}
+      className={className}
+      {...props}
+    >
+      {icon}
+    </Button>
+  );
+}
+
+export { Button, IconButton, buttonVariants };

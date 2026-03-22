@@ -15,6 +15,31 @@ vi.mock('react-router', async () => {
   };
 });
 
+describe('LoginPage Integration Tests (current architecture)', () => {
+  it('renders login form shell', () => {
+    renderWithProviders(<LoginPage />);
+
+    expect(screen.getByRole('heading', { name: /welcome back/i })).toBeInTheDocument();
+    expect(screen.getByLabelText(/email/i)).toBeInTheDocument();
+    expect(screen.getByPlaceholderText(/enter your password/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /sign in/i })).toBeInTheDocument();
+  });
+
+  it('accepts user input in email and password fields', async () => {
+    const user = userEvent.setup();
+    renderWithProviders(<LoginPage />);
+
+    const emailInput = screen.getByLabelText(/email/i);
+    const passwordInput = screen.getByPlaceholderText(/enter your password/i);
+
+    await user.type(emailInput, 'test@example.com');
+    await user.type(passwordInput, 'password123');
+
+    expect(emailInput).toHaveValue('test@example.com');
+    expect(passwordInput).toHaveValue('password123');
+  });
+});
+
 describe('LoginPage Integration Tests', () => {
   beforeEach(() => {
     localStorage.clear();

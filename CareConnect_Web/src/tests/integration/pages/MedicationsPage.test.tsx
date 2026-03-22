@@ -15,6 +15,32 @@ vi.mock('react-router', async () => {
   };
 });
 
+describe('MedicationsPage Integration Tests (current architecture)', () => {
+  it('renders page heading and search control', () => {
+    sessionStorage.setItem('user', JSON.stringify({
+      id: '1',
+      email: 'test@careconnect.com',
+      name: 'Test User',
+    }));
+
+    renderWithProviders(<MedicationsPage />);
+
+    expect(screen.getByRole('heading', { name: /medications/i })).toBeInTheDocument();
+    expect(screen.getByPlaceholderText(/search medications/i)).toBeInTheDocument();
+  });
+
+  it('renders add medication action', () => {
+    sessionStorage.setItem('user', JSON.stringify({
+      id: '1',
+      email: 'test@careconnect.com',
+      name: 'Test User',
+    }));
+
+    renderWithProviders(<MedicationsPage />);
+    expect(screen.getByRole('button', { name: /add medication/i })).toBeInTheDocument();
+  });
+});
+
 describe('MedicationsPage Integration Tests', () => {
   beforeEach(() => {
     localStorage.clear();

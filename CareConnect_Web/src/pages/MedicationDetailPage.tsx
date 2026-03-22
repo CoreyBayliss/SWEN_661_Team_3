@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router';
+import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Edit, Trash2, Pill, Clock, User, FileText, Package } from 'lucide-react';
 import { Container, Grid } from '../components/ui/Grid';
 import { Card, CardHeader, CardContent } from '../components/ui/Card';

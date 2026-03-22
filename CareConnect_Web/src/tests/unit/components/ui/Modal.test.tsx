@@ -3,6 +3,33 @@ import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Modal } from '@/components/ui/Modal';
 
+describe('Modal Component (current architecture)', () => {
+  it('renders open state and closes from button', async () => {
+    const user = userEvent.setup();
+    const onClose = vi.fn();
+
+    render(
+      <Modal isOpen onClose={onClose} title="Test Modal">
+        <div>Modal Content</div>
+      </Modal>,
+    );
+
+    expect(screen.getByRole('dialog')).toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: /close modal/i }));
+    expect(onClose).toHaveBeenCalled();
+  });
+
+  it('does not render when closed', () => {
+    render(
+      <Modal isOpen={false} onClose={vi.fn()}>
+        <div>Modal Content</div>
+      </Modal>,
+    );
+
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+  });
+});
+
 describe('Modal Component', () => {
   const defaultProps = {
     isOpen: true,

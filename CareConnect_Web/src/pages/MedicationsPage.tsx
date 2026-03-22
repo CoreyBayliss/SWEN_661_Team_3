@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { Plus, Search, Filter, Pill, Clock, AlertCircle, CheckCircle, Package } from 'lucide-react';
 import { Container, Grid } from '../components/ui/Grid';
 import { Card, CardHeader, CardContent } from '../components/ui/Card';

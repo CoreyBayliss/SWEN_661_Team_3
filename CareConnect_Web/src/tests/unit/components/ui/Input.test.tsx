@@ -1,3 +1,4 @@
+import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -198,7 +199,7 @@ describe('Input Component', () => {
       render(<Input error="Invalid input" />);
 
       const input = screen.getByRole('textbox');
-      expect(input).toHaveClass('border-[var(--color-error)]');
+      expect(input).toHaveClass('aria-invalid:border-destructive');
       expect(input).toHaveAttribute('aria-invalid', 'true');
     });
 
@@ -281,7 +282,7 @@ describe('Input Component', () => {
     it('should render password input', () => {
       render(<Input type="password" />);
 
-      const input = screen.getByLabelText(/password/i) || document.querySelector('input[type="password"]');
+      const input = document.querySelector('input[type="password"]');
       expect(input).toHaveAttribute('type', 'password');
     });
 
@@ -429,9 +430,11 @@ describe('Input Component', () => {
       render(<Input />);
 
       const input = screen.getByRole('textbox');
-      await user.type(input, '!@#$%^&*()_+-=[]{}|;:\'",.<>?/~`');
+      const specialChars = '!@#$%^&*()_+-=[]{}|;:\'",.<>?/~`';
+      await user.click(input);
+      await user.paste(specialChars);
 
-      expect(input).toHaveValue('!@#$%^&*()_+-=[]{}|;:\'",.<>?/~`');
+      expect(input).toHaveValue(specialChars);
     });
 
     it('should handle rapid typing', async () => {

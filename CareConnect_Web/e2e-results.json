@@ -1,0 +1,2943 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\playwright.config.ts",
+    "rootDir": "C:/Users/Corey/OneDrive/Desktop/Swen660Part2/CareConnect_Combined/SWEN_661_Team_3/careconnect_electron/e2e",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Corey/OneDrive/Desktop/Swen660Part2/CareConnect_Combined/SWEN_661_Team_3/careconnect_electron/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "electron",
+        "name": "electron",
+        "testDir": "C:/Users/Corey/OneDrive/Desktop/Swen660Part2/CareConnect_Combined/SWEN_661_Team_3/careconnect_electron/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "e2e-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "01-login-flow.spec.ts",
+      "file": "01-login-flow.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Flow E2E Tests",
+          "file": "01-login-flow.spec.ts",
+          "line": 24,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display login screen on app launch",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 153,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:10:37.258Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "63c124edfb6aa51b09ef-62a3d918cf64409f48b0",
+              "file": "01-login-flow.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "should have accessible form fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Login form not shown because user is already authenticated.",
+                      "location": {
+                        "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\01-login-flow.spec.ts",
+                        "line": 40,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 5,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:10:38.067Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Login form not shown because user is already authenticated.",
+                          "location": {
+                            "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\01-login-flow.spec.ts",
+                            "line": 40,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "63c124edfb6aa51b09ef-80cfa28f6b1b414de449",
+              "file": "01-login-flow.spec.ts",
+              "line": 37,
+              "column": 7
+            },
+            {
+              "title": "should toggle password visibility",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:10:38.083Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "63c124edfb6aa51b09ef-5ca49562fd1c74da352a",
+              "file": "01-login-flow.spec.ts",
+              "line": 51,
+              "column": 7
+            },
+            {
+              "title": "should successfully login with demo credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10114,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:10:38.107Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "63c124edfb6aa51b09ef-45bfce0478b1b379ae21",
+              "file": "01-login-flow.spec.ts",
+              "line": 68,
+              "column": 7
+            },
+            {
+              "title": "should validate empty login fields",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 133,
+                      "error": {
+                        "message": "Error: locator.clear: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('input[type=\"text\"], input[name*=\"user\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" id=\"username\" autocomplete=\"username\" value=\"demo@example.com\" placeholder=\"Enter your username\" class=\"w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-colors\"/>\u001b[22m\n\u001b[2m    - fill(\"\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: locator.clear: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('input[type=\"text\"], input[name*=\"user\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" id=\"username\" autocomplete=\"username\" value=\"demo@example.com\" placeholder=\"Enter your username\" class=\"w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-colors\"/>\u001b[22m\n\u001b[2m    - fill(\"\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\01-login-flow.spec.ts:95:27",
+                        "location": {
+                          "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\01-login-flow.spec.ts",
+                          "column": 27,
+                          "line": 95
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 93 |\u001b[39m     \n \u001b[90m 94 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m usernameField\u001b[33m.\u001b[39misVisible()) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 95 |\u001b[39m       \u001b[36mawait\u001b[39m usernameField\u001b[33m.\u001b[39mclear()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 96 |\u001b[39m       \u001b[36mawait\u001b[39m passwordField\u001b[33m.\u001b[39mclear()\u001b[33m;\u001b[39m\n \u001b[90m 97 |\u001b[39m       \n \u001b[90m 98 |\u001b[39m       \u001b[90m// Try to submit\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\01-login-flow.spec.ts",
+                            "column": 27,
+                            "line": 95
+                          },
+                          "message": "Error: locator.clear: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('input[type=\"text\"], input[name*=\"user\"]').first()\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"text\" id=\"username\" autocomplete=\"username\" value=\"demo@example.com\" placeholder=\"Enter your username\" class=\"w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-colors\"/>\u001b[22m\n\u001b[2m    - fill(\"\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[0m \u001b[90m 93 |\u001b[39m     \n \u001b[90m 94 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m usernameField\u001b[33m.\u001b[39misVisible()) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 95 |\u001b[39m       \u001b[36mawait\u001b[39m usernameField\u001b[33m.\u001b[39mclear()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 96 |\u001b[39m       \u001b[36mawait\u001b[39m passwordField\u001b[33m.\u001b[39mclear()\u001b[33m;\u001b[39m\n \u001b[90m 97 |\u001b[39m       \n \u001b[90m 98 |\u001b[39m       \u001b[90m// Try to submit\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\01-login-flow.spec.ts:95:27\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:10:48.233Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\01-login-flow.spec.ts",
+                        "column": 27,
+                        "line": 95
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "63c124edfb6aa51b09ef-9092af66f71aa461b7fb",
+              "file": "01-login-flow.spec.ts",
+              "line": 88,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Keyboard Navigation Tests",
+          "file": "01-login-flow.spec.ts",
+          "line": 108,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should navigate form with Tab key",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 727,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:10:49.556Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "63c124edfb6aa51b09ef-723b85b8cdc8abc52c3d",
+              "file": "01-login-flow.spec.ts",
+              "line": 109,
+              "column": 7
+            },
+            {
+              "title": "should submit form with Enter key",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2069,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:10:50.927Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "63c124edfb6aa51b09ef-629077b1935b1be22a42",
+              "file": "01-login-flow.spec.ts",
+              "line": 127,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Accessibility Tests",
+          "file": "01-login-flow.spec.ts",
+          "line": 144,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should have proper ARIA labels on interactive elements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 72,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:10:53.006Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "63c124edfb6aa51b09ef-ea02dbf477a2af1efba7",
+              "file": "01-login-flow.spec.ts",
+              "line": 145,
+              "column": 7
+            },
+            {
+              "title": "should have minimum touch target sizes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 76,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:10:53.086Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "63c124edfb6aa51b09ef-0d67b7d7b80106901064",
+              "file": "01-login-flow.spec.ts",
+              "line": 170,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "02-medication-management.spec.ts",
+      "file": "02-medication-management.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Medication Management E2E Tests",
+          "file": "02-medication-management.spec.ts",
+          "line": 31,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should navigate to medications page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 30020,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"medications-nav\"], [href*=\"medication\"]').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"medications-nav\"], [href*=\"medication\"]').first()\u001b[22m\n\n    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\02-medication-management.spec.ts:41:91",
+                        "location": {
+                          "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\02-medication-management.spec.ts",
+                          "column": 91,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 39 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 40 |\u001b[39m       \u001b[90m// Try sidebar navigation\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-testid=\"medications-nav\"], [href*=\"medication\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     }\n \u001b[90m 44 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\02-medication-management.spec.ts",
+                            "column": 91,
+                            "line": 41
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"medications-nav\"], [href*=\"medication\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 39 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 40 |\u001b[39m       \u001b[90m// Try sidebar navigation\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-testid=\"medications-nav\"], [href*=\"medication\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     }\n \u001b[90m 44 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\02-medication-management.spec.ts:41:91\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:10:53.460Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\02-medication-management-M-60f96-avigate-to-medications-page-electron\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\02-medication-management-M-60f96-avigate-to-medications-page-electron\\test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\02-medication-management-M-60f96-avigate-to-medications-page-electron\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\02-medication-management.spec.ts",
+                        "column": 91,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e273880e6a0a2eebe763-523b388f20c13c9c2c71",
+              "file": "02-medication-management.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "should display medication list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 636,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:11:27.868Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e273880e6a0a2eebe763-b1a610000940cd9f52a6",
+              "file": "02-medication-management.spec.ts",
+              "line": 49,
+              "column": 7
+            },
+            {
+              "title": "should show medication details",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:11:29.387Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e273880e6a0a2eebe763-fa10d0c5b6330f1673ab",
+              "file": "02-medication-management.spec.ts",
+              "line": 57,
+              "column": 7
+            },
+            {
+              "title": "should mark medication as taken",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:11:29.411Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e273880e6a0a2eebe763-9fbd1b27dd476e393ae4",
+              "file": "02-medication-management.spec.ts",
+              "line": 72,
+              "column": 7
+            },
+            {
+              "title": "should skip medication",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:11:29.436Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e273880e6a0a2eebe763-d9ff12d5f847b2d67ed1",
+              "file": "02-medication-management.spec.ts",
+              "line": 89,
+              "column": 7
+            },
+            {
+              "title": "should open add medication dialog",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 33,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:11:29.462Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e273880e6a0a2eebe763-e2cbd8f4181183da7aa4",
+              "file": "02-medication-management.spec.ts",
+              "line": 102,
+              "column": 7
+            },
+            {
+              "title": "should filter medications",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 21,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:11:29.505Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e273880e6a0a2eebe763-1e678478f73bf86de170",
+              "file": "02-medication-management.spec.ts",
+              "line": 116,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Medication Accessibility Tests",
+          "file": "02-medication-management.spec.ts",
+          "line": 130,
+          "column": 6,
+          "specs": [
+            {
+              "title": "medication cards should have proper ARIA labels",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 47,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:11:29.533Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e273880e6a0a2eebe763-e35f642f4f7599be7a25",
+              "file": "02-medication-management.spec.ts",
+              "line": 131,
+              "column": 7
+            },
+            {
+              "title": "action buttons should meet touch target size requirements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 120,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:11:29.588Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e273880e6a0a2eebe763-4c47bf146ac28c93c044",
+              "file": "02-medication-management.spec.ts",
+              "line": 146,
+              "column": 7
+            },
+            {
+              "title": "should support keyboard navigation for medication actions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:11:29.716Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e273880e6a0a2eebe763-9221552f150ab0a15c94",
+              "file": "02-medication-management.spec.ts",
+              "line": 161,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Medication History Tests",
+          "file": "02-medication-management.spec.ts",
+          "line": 179,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display medication history",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:11:29.734Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e273880e6a0a2eebe763-82c349a18aa6638bd257",
+              "file": "02-medication-management.spec.ts",
+              "line": 180,
+              "column": 7
+            },
+            {
+              "title": "should show timestamp for medication actions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:11:29.756Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e273880e6a0a2eebe763-459abd54a3893c76ec96",
+              "file": "02-medication-management.spec.ts",
+              "line": 194,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "03-appointments-flow.spec.ts",
+      "file": "03-appointments-flow.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Calendar and Appointments E2E Tests",
+          "file": "03-appointments-flow.spec.ts",
+          "line": 29,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should navigate to calendar page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 30089,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[href*=\"calendar\"], [href*=\"appointment\"]').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[href*=\"calendar\"], [href*=\"appointment\"]').first()\u001b[22m\n\n    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\03-appointments-flow.spec.ts:39:79",
+                        "location": {
+                          "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\03-appointments-flow.spec.ts",
+                          "column": 79,
+                          "line": 39
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 37 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 38 |\u001b[39m       \u001b[90m// Try sidebar navigation\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[href*=\"calendar\"], [href*=\"appointment\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 41 |\u001b[39m     }\n \u001b[90m 42 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\03-appointments-flow.spec.ts",
+                            "column": 79,
+                            "line": 39
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[href*=\"calendar\"], [href*=\"appointment\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 37 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 38 |\u001b[39m       \u001b[90m// Try sidebar navigation\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[href*=\"calendar\"], [href*=\"appointment\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 41 |\u001b[39m     }\n \u001b[90m 42 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\03-appointments-flow.spec.ts:39:79\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:11:30.037Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\03-appointments-flow-Calen-9d915-d-navigate-to-calendar-page-electron\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\03-appointments-flow-Calen-9d915-d-navigate-to-calendar-page-electron\\test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\03-appointments-flow-Calen-9d915-d-navigate-to-calendar-page-electron\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\03-appointments-flow.spec.ts",
+                        "column": 79,
+                        "line": 39
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-e792a74320184a124a22",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 30,
+              "column": 7
+            },
+            {
+              "title": "should display calendar view",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5025,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-testid=\"calendar\"], [role=\"grid\"], .calendar').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"calendar\"], [role=\"grid\"], .calendar').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-testid=\"calendar\"], [role=\"grid\"], .calendar').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"calendar\"], [role=\"grid\"], .calendar').first()\u001b[22m\n\n    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\03-appointments-flow.spec.ts:52:28",
+                        "location": {
+                          "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\03-appointments-flow.spec.ts",
+                          "column": 28,
+                          "line": 52
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 50 |\u001b[39m     \n \u001b[90m 51 |\u001b[39m     \u001b[90m// Calendar should be visible\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m     \u001b[36mawait\u001b[39m expect(calendar)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m\n \u001b[90m 55 |\u001b[39m   test(\u001b[32m'should show current month and year'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\03-appointments-flow.spec.ts",
+                            "column": 28,
+                            "line": 52
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-testid=\"calendar\"], [role=\"grid\"], .calendar').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"calendar\"], [role=\"grid\"], .calendar').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 50 |\u001b[39m     \n \u001b[90m 51 |\u001b[39m     \u001b[90m// Calendar should be visible\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m     \u001b[36mawait\u001b[39m expect(calendar)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m\n \u001b[90m 55 |\u001b[39m   test(\u001b[32m'should show current month and year'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\03-appointments-flow.spec.ts:52:28\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:02.640Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\03-appointments-flow-Calen-b51d4-hould-display-calendar-view-electron\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\03-appointments-flow-Calen-b51d4-hould-display-calendar-view-electron\\test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\03-appointments-flow-Calen-b51d4-hould-display-calendar-view-electron\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\03-appointments-flow.spec.ts",
+                        "column": 28,
+                        "line": 52
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-c2b77eb29e37ef72d0d9",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 47,
+              "column": 7
+            },
+            {
+              "title": "should show current month and year",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5049,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=March').or(locator('text=2026'))\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=March').or(locator('text=2026'))\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=March').or(locator('text=2026'))\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=March').or(locator('text=2026'))\u001b[22m\n\n    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\03-appointments-flow.spec.ts:65:48",
+                        "location": {
+                          "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\03-appointments-flow.spec.ts",
+                          "column": 48,
+                          "line": 65
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 63 |\u001b[39m     \u001b[36mconst\u001b[39m yearElement \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m`text=${currentYear}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 64 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 65 |\u001b[39m     \u001b[36mawait\u001b[39m expect(monthElement\u001b[33m.\u001b[39mor(yearElement))\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 66 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m\n \u001b[90m 68 |\u001b[39m   test(\u001b[32m'should navigate between months'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\03-appointments-flow.spec.ts",
+                            "column": 48,
+                            "line": 65
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=March').or(locator('text=2026'))\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=March').or(locator('text=2026'))\u001b[22m\n\n\n\u001b[0m \u001b[90m 63 |\u001b[39m     \u001b[36mconst\u001b[39m yearElement \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m`text=${currentYear}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 64 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 65 |\u001b[39m     \u001b[36mawait\u001b[39m expect(monthElement\u001b[33m.\u001b[39mor(yearElement))\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 66 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m\n \u001b[90m 68 |\u001b[39m   test(\u001b[32m'should navigate between months'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\03-appointments-flow.spec.ts:65:48\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:10.274Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\03-appointments-flow-Calen-da77b-show-current-month-and-year-electron\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\03-appointments-flow-Calen-da77b-show-current-month-and-year-electron\\test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\03-appointments-flow-Calen-da77b-show-current-month-and-year-electron\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\03-appointments-flow.spec.ts",
+                        "column": 48,
+                        "line": 65
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-c05869a46863f5f1bdf1",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 55,
+              "column": 7
+            },
+            {
+              "title": "should navigate between months",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 26,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:17.863Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-ab108725983d696bafe1",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 68,
+              "column": 7
+            },
+            {
+              "title": "should select a calendar date",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:18.797Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-e77c5f4052a063b7ee20",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 86,
+              "column": 7
+            },
+            {
+              "title": "should display appointments list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 85,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:18.823Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-401785db01d22ea744fe",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 100,
+              "column": 7
+            },
+            {
+              "title": "should show appointment details",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 40,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:18.918Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-fe259c2e749653eecd19",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 109,
+              "column": 7
+            },
+            {
+              "title": "should open add appointment dialog",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:18.967Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-7c947f65683c24f8657f",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 124,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Appointment Details Tests",
+          "file": "03-appointments-flow.spec.ts",
+          "line": 139,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display appointment information fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 25,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:18.980Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-6a64b0b43801b4a4eb1b",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 140,
+              "column": 7
+            },
+            {
+              "title": "should have reminder option",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:19.018Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-cc00fcd1da549a0ed9aa",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 149,
+              "column": 7
+            },
+            {
+              "title": "should allow appointment cancellation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:19.033Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-2f19d5827689c10ff028",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 162,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Calendar Accessibility Tests",
+          "file": "03-appointments-flow.spec.ts",
+          "line": 186,
+          "column": 6,
+          "specs": [
+            {
+              "title": "calendar should have proper grid role",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:19.048Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-c03b79f3a03ac3f4f791",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 187,
+              "column": 7
+            },
+            {
+              "title": "date cells should be keyboard navigable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:19.062Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-e23b483a9f32e3ed7c0f",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 196,
+              "column": 7
+            },
+            {
+              "title": "appointment cards should meet touch target requirements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 36,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:19.075Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-5ce704b52dc219607003",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 212,
+              "column": 7
+            },
+            {
+              "title": "navigation buttons should have ARIA labels",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 133,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:19.121Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-c26d5c520e2c3af47e72",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 226,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Calendar View Modes Tests",
+          "file": "03-appointments-flow.spec.ts",
+          "line": 238,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should support different view modes if available",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 101,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:19.263Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0547976beca3cfd88192-30e39697df0ea9ddc3de",
+              "file": "03-appointments-flow.spec.ts",
+              "line": 239,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "04-refill-request-flow.spec.ts",
+      "file": "04-refill-request-flow.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Medication Refill Request E2E Tests",
+          "file": "04-refill-request-flow.spec.ts",
+          "line": 36,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should find medication needing refill",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:19.640Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "11987cdb243ba910f9a3-b7607b7e873bd670a945",
+              "file": "04-refill-request-flow.spec.ts",
+              "line": 37,
+              "column": 7
+            },
+            {
+              "title": "should open refill request dialog",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 30013,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid*=\"medication-card\"], article').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid*=\"medication-card\"], article').first()\u001b[22m\n\n    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\04-refill-request-flow.spec.ts:49:26",
+                        "location": {
+                          "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\04-refill-request-flow.spec.ts",
+                          "column": 26,
+                          "line": 49
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[90m// Click on medication card\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m medicationCard \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-testid*=\"medication-card\"], article'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m     \u001b[36mawait\u001b[39m medicationCard\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m     \n \u001b[90m 52 |\u001b[39m     \u001b[90m// Look for refill button\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\04-refill-request-flow.spec.ts",
+                            "column": 26,
+                            "line": 49
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid*=\"medication-card\"], article').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[90m// Click on medication card\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m medicationCard \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-testid*=\"medication-card\"], article'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m     \u001b[36mawait\u001b[39m medicationCard\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m     \n \u001b[90m 52 |\u001b[39m     \u001b[90m// Look for refill button\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\04-refill-request-flow.spec.ts:49:26\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:22.708Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\04-refill-request-flow-Med-bb88d--open-refill-request-dialog-electron\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\04-refill-request-flow-Med-bb88d--open-refill-request-dialog-electron\\test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\04-refill-request-flow-Med-bb88d--open-refill-request-dialog-electron\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\04-refill-request-flow.spec.ts",
+                        "column": 26,
+                        "line": 49
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "11987cdb243ba910f9a3-a3ece3486fe01a298a15",
+              "file": "04-refill-request-flow.spec.ts",
+              "line": 46,
+              "column": 7
+            },
+            {
+              "title": "should display refill request form fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 36,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:54.064Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "11987cdb243ba910f9a3-6edde51a0524e05149aa",
+              "file": "04-refill-request-flow.spec.ts",
+              "line": 65,
+              "column": 7
+            },
+            {
+              "title": "should fill pharmacy information",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 73,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:55.019Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "11987cdb243ba910f9a3-6fd486c8b7f8bf996cf5",
+              "file": "04-refill-request-flow.spec.ts",
+              "line": 81,
+              "column": 7
+            },
+            {
+              "title": "should select pickup method",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 36,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:55.101Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "11987cdb243ba910f9a3-f28bfd28f78d56665cd6",
+              "file": "04-refill-request-flow.spec.ts",
+              "line": 94,
+              "column": 7
+            },
+            {
+              "title": "should add optional notes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:55.145Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "11987cdb243ba910f9a3-68aa89df7e7b89470b30",
+              "file": "04-refill-request-flow.spec.ts",
+              "line": 108,
+              "column": 7
+            },
+            {
+              "title": "should submit refill request",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:55.168Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "11987cdb243ba910f9a3-e821ea1a127b2ab33cdf",
+              "file": "04-refill-request-flow.spec.ts",
+              "line": 120,
+              "column": 7
+            },
+            {
+              "title": "should display refill confirmation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:55.190Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "11987cdb243ba910f9a3-67026c0cf8c9b4d4ea85",
+              "file": "04-refill-request-flow.spec.ts",
+              "line": 135,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Refill Form Validation Tests",
+          "file": "04-refill-request-flow.spec.ts",
+          "line": 148,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should validate required fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:55.205Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "11987cdb243ba910f9a3-b37fbb96aefda152a0fd",
+              "file": "04-refill-request-flow.spec.ts",
+              "line": 149,
+              "column": 7
+            },
+            {
+              "title": "should allow form cancellation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:55.217Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "11987cdb243ba910f9a3-58fec1617ae3fd4f91ee",
+              "file": "04-refill-request-flow.spec.ts",
+              "line": 174,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Refill Accessibility Tests",
+          "file": "04-refill-request-flow.spec.ts",
+          "line": 189,
+          "column": 6,
+          "specs": [
+            {
+              "title": "form fields should have proper labels",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:55.229Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "11987cdb243ba910f9a3-1a2afe413e277281d7a1",
+              "file": "04-refill-request-flow.spec.ts",
+              "line": 190,
+              "column": 7
+            },
+            {
+              "title": "radio buttons should be keyboard accessible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:55.242Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "11987cdb243ba910f9a3-02fc62998b173858390e",
+              "file": "04-refill-request-flow.spec.ts",
+              "line": 214,
+              "column": 7
+            },
+            {
+              "title": "submit button should meet touch target requirements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:55.254Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "11987cdb243ba910f9a3-42c2dba81b3bf919b826",
+              "file": "04-refill-request-flow.spec.ts",
+              "line": 229,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Refill History Tests",
+          "file": "04-refill-request-flow.spec.ts",
+          "line": 243,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display refill request history",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:55.270Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "11987cdb243ba910f9a3-bc71341c3555f2fb4a9d",
+              "file": "04-refill-request-flow.spec.ts",
+              "line": 244,
+              "column": 7
+            },
+            {
+              "title": "should show refill request status",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 27,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:55.286Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "11987cdb243ba910f9a3-208b21a1544a836c6d06",
+              "file": "04-refill-request-flow.spec.ts",
+              "line": 256,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "05-settings-accessibility-flow.spec.ts",
+      "file": "05-settings-accessibility-flow.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Settings and Accessibility E2E Tests",
+          "file": "05-settings-accessibility-flow.spec.ts",
+          "line": 29,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should navigate to settings page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 30034,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[aria-label*=\"settings\"], [data-icon=\"settings\"]').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[aria-label*=\"settings\"], [data-icon=\"settings\"]').first()\u001b[22m\n\n    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\05-settings-accessibility-flow.spec.ts:39:86",
+                        "location": {
+                          "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\05-settings-accessibility-flow.spec.ts",
+                          "column": 86,
+                          "line": 39
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 37 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 38 |\u001b[39m       \u001b[90m// Try gear icon\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[aria-label*=\"settings\"], [data-icon=\"settings\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 41 |\u001b[39m     }\n \u001b[90m 42 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\05-settings-accessibility-flow.spec.ts",
+                            "column": 86,
+                            "line": 39
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[aria-label*=\"settings\"], [data-icon=\"settings\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 37 |\u001b[39m     } \u001b[36melse\u001b[39m {\n \u001b[90m 38 |\u001b[39m       \u001b[90m// Try gear icon\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[aria-label*=\"settings\"], [data-icon=\"settings\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 41 |\u001b[39m     }\n \u001b[90m 42 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\05-settings-accessibility-flow.spec.ts:39:86\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:12:55.767Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\05-settings-accessibility--09f5b-d-navigate-to-settings-page-electron\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\05-settings-accessibility--09f5b-d-navigate-to-settings-page-electron\\test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\05-settings-accessibility--09f5b-d-navigate-to-settings-page-electron\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\05-settings-accessibility-flow.spec.ts",
+                        "column": 86,
+                        "line": 39
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-4f2fc06112ad7d84a95d",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 30,
+              "column": 7
+            },
+            {
+              "title": "should display settings categories",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 57,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:30.201Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-88a15bff0393e36f3052",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 47,
+              "column": 7
+            },
+            {
+              "title": "should toggle left-hand mode",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:31.147Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-890d3aefbbc23149ed6c",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 60,
+              "column": 7
+            },
+            {
+              "title": "should toggle dark mode",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 45,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:31.165Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-c39aad40521fa6a04724",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 82,
+              "column": 7
+            },
+            {
+              "title": "should adjust text size",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 35,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:31.220Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-e4e23e8a179dd6146c24",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 101,
+              "column": 7
+            },
+            {
+              "title": "should toggle high contrast mode",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:31.264Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-72f8c449626fa7a84253",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 118,
+              "column": 7
+            },
+            {
+              "title": "should toggle notifications",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:31.277Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-c225797656d2cd7134a1",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 132,
+              "column": 7
+            },
+            {
+              "title": "should configure biometric authentication",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:31.296Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-86c402c7bba4b2819ab3",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 151,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Settings Persistence Tests",
+          "file": "05-settings-accessibility-flow.spec.ts",
+          "line": 165,
+          "column": 6,
+          "specs": [
+            {
+              "title": "settings should persist after reload",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:31.310Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-60377a4d46bcd9aaa972",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 166,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Accessibility Settings Tests",
+          "file": "05-settings-accessibility-flow.spec.ts",
+          "line": 194,
+          "column": 6,
+          "specs": [
+            {
+              "title": "screen reader mode should be configurable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:31.323Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-f1324d7c00e329fef892",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 195,
+              "column": 7
+            },
+            {
+              "title": "keyboard shortcuts should be displayed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:31.339Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-294f4be08b2dcb27d1a4",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 207,
+              "column": 7
+            },
+            {
+              "title": "focus indicators should be configurable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:31.354Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-461006ec419f667e7af8",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 221,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Settings Accessibility Compliance Tests",
+          "file": "05-settings-accessibility-flow.spec.ts",
+          "line": 234,
+          "column": 6,
+          "specs": [
+            {
+              "title": "toggle switches should have proper ARIA attributes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:31.369Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-5fc916eac6d1eb3b01a8",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 235,
+              "column": 7
+            },
+            {
+              "title": "settings controls should meet touch target requirements",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 346,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m32\u001b[39m\nReceived:    \u001b[31m10\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m32\u001b[39m\nReceived:    \u001b[31m10\u001b[39m\n    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\05-settings-accessibility-flow.spec.ts:258:30",
+                        "location": {
+                          "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\05-settings-accessibility-flow.spec.ts",
+                          "column": 30,
+                          "line": 258
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 256 |\u001b[39m         \n \u001b[90m 257 |\u001b[39m         \u001b[36mif\u001b[39m (box) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 258 |\u001b[39m           expect(box\u001b[33m.\u001b[39mheight)\u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(\u001b[35m32\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 259 |\u001b[39m         }\n \u001b[90m 260 |\u001b[39m       }\n \u001b[90m 261 |\u001b[39m     }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\05-settings-accessibility-flow.spec.ts",
+                            "column": 30,
+                            "line": 258
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m32\u001b[39m\nReceived:    \u001b[31m10\u001b[39m\n\n\u001b[0m \u001b[90m 256 |\u001b[39m         \n \u001b[90m 257 |\u001b[39m         \u001b[36mif\u001b[39m (box) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 258 |\u001b[39m           expect(box\u001b[33m.\u001b[39mheight)\u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(\u001b[35m32\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 259 |\u001b[39m         }\n \u001b[90m 260 |\u001b[39m       }\n \u001b[90m 261 |\u001b[39m     }\u001b[0m\n\u001b[2m    at C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\05-settings-accessibility-flow.spec.ts:258:30\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:31.382Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\05-settings-accessibility--53dbb-t-touch-target-requirements-electron\\test-failed-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\05-settings-accessibility--53dbb-t-touch-target-requirements-electron\\test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\test-results\\05-settings-accessibility--53dbb-t-touch-target-requirements-electron\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Corey\\OneDrive\\Desktop\\Swen660Part2\\CareConnect_Combined\\SWEN_661_Team_3\\careconnect_electron\\e2e\\05-settings-accessibility-flow.spec.ts",
+                        "column": 30,
+                        "line": 258
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-635d95779ba27993f71f",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 250,
+              "column": 7
+            },
+            {
+              "title": "settings should be keyboard navigable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 660,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:33.501Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-a91c152748d5674bd3b1",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 264,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Account Settings Tests",
+          "file": "05-settings-accessibility-flow.spec.ts",
+          "line": 280,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display account information",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:37.298Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-e9fea7cd76e8154795f7",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 281,
+              "column": 7
+            },
+            {
+              "title": "should have logout option",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "electron",
+                  "projectName": "electron",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-04T03:13:37.310Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3528eb403014cea89a1-8b31252a9ebfe3ae696a",
+              "file": "05-settings-accessibility-flow.spec.ts",
+              "line": 297,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-03-04T03:10:36.212Z",
+    "duration": 181445.23299999998,
+    "expected": 60,
+    "skipped": 1,
+    "unexpected": 8,
+    "flaky": 0
+  }
+}
