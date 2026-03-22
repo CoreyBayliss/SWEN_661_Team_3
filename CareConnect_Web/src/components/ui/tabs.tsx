@@ -63,4 +63,42 @@ function TabsContent({
   );
 }
 
-export { Tabs, TabsList, TabsTrigger, TabsContent };
+interface VerticalTabItem {
+  id: string;
+  label: string;
+  icon?: React.ReactNode;
+  content: React.ReactNode;
+}
+
+function VerticalTabs({ tabs }: Readonly<{ tabs: VerticalTabItem[] }>) {
+  const defaultValue = tabs[0]?.id;
+
+  if (!defaultValue) return null;
+
+  return (
+    <Tabs defaultValue={defaultValue} className="gap-6 lg:flex-row">
+      <TabsList className="h-auto w-full flex-col items-stretch justify-start rounded-lg bg-transparent p-0 lg:w-64 lg:flex-shrink-0">
+        {tabs.map((tab) => (
+          <TabsTrigger
+            key={tab.id}
+            value={tab.id}
+            className="h-auto w-full justify-start gap-3 rounded-lg border px-4 py-3 text-left data-[state=active]:border-primary"
+          >
+            {tab.icon}
+            <span>{tab.label}</span>
+          </TabsTrigger>
+        ))}
+      </TabsList>
+
+      <div className="min-w-0 flex-1">
+        {tabs.map((tab) => (
+          <TabsContent key={tab.id} value={tab.id} className="mt-0">
+            {tab.content}
+          </TabsContent>
+        ))}
+      </div>
+    </Tabs>
+  );
+}
+
+export { Tabs, TabsContent, TabsList, TabsTrigger, VerticalTabs };

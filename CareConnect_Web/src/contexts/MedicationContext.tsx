@@ -113,18 +113,30 @@ const mockAppointments: Appointment[] = [
 
 export function MedicationProvider({ children }: { children: React.ReactNode }) {
   const [medications, setMedications] = useState<Medication[]>(() => {
-    const saved = localStorage.getItem('medications');
-    return saved ? JSON.parse(saved) : mockMedications;
+    try {
+      const saved = localStorage.getItem('medications');
+      return saved ? JSON.parse(saved) : mockMedications;
+    } catch {
+      return mockMedications;
+    }
   });
 
   const [appointments, setAppointments] = useState<Appointment[]>(() => {
-    const saved = localStorage.getItem('appointments');
-    return saved ? JSON.parse(saved) : mockAppointments;
+    try {
+      const saved = localStorage.getItem('appointments');
+      return saved ? JSON.parse(saved) : mockAppointments;
+    } catch {
+      return mockAppointments;
+    }
   });
 
   const [wellnessLogs, setWellnessLogs] = useState<WellnessLog[]>(() => {
-    const saved = localStorage.getItem('wellnessLogs');
-    return saved ? JSON.parse(saved) : [];
+    try {
+      const saved = localStorage.getItem('wellnessLogs');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
   });
 
   useEffect(() => {

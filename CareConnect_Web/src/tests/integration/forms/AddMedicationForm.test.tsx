@@ -536,3 +536,41 @@ describe('Add Medication Form Integration Tests', () => {
     });
   });
 });
+
+describe('Add Medication Form Integration Tests (Current Architecture)', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    sessionStorage.clear();
+    mockNavigate.mockClear();
+
+    sessionStorage.setItem('user', JSON.stringify({
+      id: '1',
+      email: 'test@careconnect.com',
+      name: 'Test User',
+    }));
+  });
+
+  it('renders core form fields and actions', () => {
+    renderWithProviders(<AddMedicationPage />);
+
+    expect(screen.getByRole('heading', { name: /add medication/i })).toBeInTheDocument();
+    expect(screen.getByLabelText(/medication name/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/dosage/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /add medication/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /cancel/i })).toBeInTheDocument();
+  });
+
+  it('accepts user input for medication details', async () => {
+    const user = userEvent.setup();
+    renderWithProviders(<AddMedicationPage />);
+
+    const nameInput = screen.getByLabelText(/medication name/i);
+    const dosageInput = screen.getByLabelText(/dosage/i);
+
+    await user.type(nameInput, 'Lisinopril');
+    await user.type(dosageInput, '10mg');
+
+    expect(nameInput).toHaveValue('Lisinopril');
+    expect(dosageInput).toHaveValue('10mg');
+  });
+});

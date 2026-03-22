@@ -1,0 +1,49 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e8]: CC
+        - generic [ref=e9]: CareConnect - Login
+      - generic [ref=e11]:
+        - button "Minimize window" [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+        - button "Maximize window" [ref=e14] [cursor=pointer]:
+          - img [ref=e15]
+        - button "Close window" [ref=e17] [cursor=pointer]:
+          - img [ref=e18]
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e25]: CC
+        - heading "CareConnect" [level=1] [ref=e26]
+        - paragraph [ref=e27]: Desktop Healthcare Management
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - heading "Welcome Back" [level=2] [ref=e30]
+          - paragraph [ref=e31]: Sign in to continue to your dashboard
+        - generic [ref=e32]: Invalid username or password
+        - generic [ref=e33]:
+          - generic [ref=e34]: Username
+          - generic [ref=e35]:
+            - generic:
+              - img
+            - textbox "Username" [ref=e36]:
+              - /placeholder: Enter your username
+              - text: demo@example.com
+        - generic [ref=e37]:
+          - generic [ref=e38]: Password
+          - generic [ref=e39]:
+            - generic:
+              - img
+            - textbox "Password" [ref=e40]:
+              - /placeholder: Enter your password
+              - text: demo123
+            - button [ref=e41] [cursor=pointer]:
+              - img [ref=e42]
+        - button "Sign In" [active] [ref=e45] [cursor=pointer]
+        - paragraph [ref=e47]: "Demo credentials: demo / demo123"
+      - paragraph [ref=e49]: Your health data is secure and private
+  - region "Notifications alt+T"
+```

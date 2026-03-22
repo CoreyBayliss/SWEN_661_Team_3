@@ -16,18 +16,29 @@ const AccessibilityContext = createContext<AccessibilityContextType | undefined>
 
 export function AccessibilityProvider({ children }: { children: React.ReactNode }) {
   const [leftHandMode, setLeftHandModeState] = useState<boolean>(() => {
-    const saved = localStorage.getItem('leftHandMode');
-    return saved ? JSON.parse(saved) : false;
+    try {
+      const saved = localStorage.getItem('leftHandMode');
+      return saved ? JSON.parse(saved) : false;
+    } catch {
+      return false;
+    }
   });
 
   const [fontSize, setFontSizeState] = useState<'normal' | 'large' | 'extra-large'>(() => {
     const saved = localStorage.getItem('fontSize');
-    return (saved as 'normal' | 'large' | 'extra-large') || 'normal';
+    if (saved === 'normal' || saved === 'large' || saved === 'extra-large') {
+      return saved;
+    }
+    return 'normal';
   });
 
   const [highContrast, setHighContrastState] = useState<boolean>(() => {
-    const saved = localStorage.getItem('highContrast');
-    return saved ? JSON.parse(saved) : false;
+    try {
+      const saved = localStorage.getItem('highContrast');
+      return saved ? JSON.parse(saved) : false;
+    } catch {
+      return false;
+    }
   });
 
   const [reducedMotion, setReducedMotion] = useState<boolean>(
@@ -77,7 +88,11 @@ export function AccessibilityProvider({ children }: { children: React.ReactNode 
     announcement.className = 'sr-only';
     announcement.textContent = message;
     document.body.appendChild(announcement);
-    setTimeout(() => document.body.removeChild(announcement), 1000);
+    setTimeout(() => {
+      if (announcement.parentNode) {
+        announcement.parentNode.removeChild(announcement);
+      }
+    }, 1000);
   };
 
   return (

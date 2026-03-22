@@ -3,6 +3,28 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Button } from '@/components/ui/Button';
 
+describe('Button Component (current architecture)', () => {
+  it('renders and handles click', async () => {
+    const user = userEvent.setup();
+    const onClick = vi.fn();
+
+    render(<Button onClick={onClick}>Submit</Button>);
+    await user.click(screen.getByRole('button', { name: /submit/i }));
+
+    expect(onClick).toHaveBeenCalledTimes(1);
+  });
+
+  it('supports disabled and loading states', () => {
+    const { rerender } = render(<Button disabled>Disabled</Button>);
+    expect(screen.getByRole('button', { name: /disabled/i })).toBeDisabled();
+
+    rerender(<Button loading>Loading</Button>);
+    const button = screen.getByRole('button', { name: /loading/i });
+    expect(button).toBeDisabled();
+    expect(button.querySelector('svg.animate-spin')).toBeInTheDocument();
+  });
+});
+
 describe('Button Component', () => {
   describe('rendering', () => {
     it('should render button with text', () => {

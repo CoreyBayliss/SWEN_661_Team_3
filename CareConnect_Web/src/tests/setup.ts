@@ -5,6 +5,7 @@ import { cleanup } from '@testing-library/react';
 // Cleanup after each test
 afterEach(() => {
   cleanup();
+  document.querySelectorAll('[role="status"]').forEach((node) => node.remove());
   localStorage.clear();
   sessionStorage.clear();
   vi.clearAllMocks();

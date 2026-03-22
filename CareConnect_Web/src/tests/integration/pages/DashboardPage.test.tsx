@@ -15,6 +15,21 @@ vi.mock('react-router', async () => {
   };
 });
 
+describe('DashboardPage Integration Tests (current architecture)', () => {
+  it('renders greeting and quick actions section', () => {
+    sessionStorage.setItem('user', JSON.stringify({
+      id: '1',
+      email: 'test@careconnect.com',
+      name: 'Test User',
+    }));
+
+    renderWithProviders(<DashboardPage />);
+
+    expect(screen.getByText(/good/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /add medication/i })).toBeInTheDocument();
+  });
+});
+
 describe('DashboardPage Integration Tests', () => {
   beforeEach(() => {
     localStorage.clear();

@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "types": ["jest", "node", "@testing-library/jest-dom"],
+    "paths": {
+      "@/*": ["src/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@context/*": ["src/context/*"],
+      "@pages/*": ["src/pages/*"],
+      "@tests/*": ["src/tests/*"],
+      "@components/*": ["src/components/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "__tests__/**/*.ts",
+    "__tests__/**/*.tsx",
+    "jest.setup.ts"
+  ]
+}
