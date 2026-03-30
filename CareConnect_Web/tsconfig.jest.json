@@ -23,8 +23,8 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
-    "__tests__/**/*.ts",
-    "__tests__/**/*.tsx",
+    "src/tests/**/*.ts",
+    "src/tests/**/*.tsx",
     "jest.setup.ts"
   ]
 }
